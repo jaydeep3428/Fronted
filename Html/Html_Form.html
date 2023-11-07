@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" autocomplete="on">
+        <table border="2px" width="100%">
+            <caption>Form</caption>
+            <tr>
+                <td><label for="color">Select the color:</label></td>
+                <td><input type="color" id="color" name="color" value="#ff0000"></td>
+            </tr>
+            <tr>
+                <td><label for="date">Select date Before 1/1/2000:</label></td>
+                <td><input type="date" id="date" name="date" min="2/1/2000" max="1/1/2005"></td>
+            </tr>
+            <tr>
+                <td><label for="month">Select the month:</label></td>
+                <td><input type="month" id="month" name="month"></td>
+            </tr>
+            <tr>
+                <td><label for="num">Select num:</label></td>
+                <td><input type="number" id="num" name="num" min="1" max="5"></td>
+            </tr>
+            <tr>
+                <td><label for="Step">Select Step:</label></td>
+                <td><input type="number" id="Step" name="Step" min="0" max="500" step="10"></td>
+            </tr>
+            <tr>
+                <td><label for="range">Range:</label></td>
+                <td><input type="range" id="range" name="range" min="1" max="5"></td>
+            </tr>
+            <tr>
+                <td><label for="mob">Enter telefone Number:</label></td>
+                <td><input type="tel" id="mob" name="mob" placeholder="123-4567-89" size="20"></td>
+            </tr>
+            <tr>
+                <td><label for="fl">Select File:</label></td>
+                <td><input type="file" id="fl" name="fl" multiple></td>
+            </tr>
+            <th colspan="2"><input type="submit" id="fr" name="fr"></th>
+        </table>
+    </form>
+</body>
+</html>
