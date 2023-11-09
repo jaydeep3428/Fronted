@@ -11,6 +11,29 @@
             background-attachment: fixed;
             background-size: cover;
         }
+        p.normal1{
+            border: 5px solid red;
+            padding: 5px;
+            background-color: chartreuse;
+        }
+        p.rounde1{
+            border: 5px solid red;
+            padding: 5px;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+        p.rounde2{
+            border: 5px solid red;
+            padding: 5px;
+            background-color: aqua;
+            border-radius: 8px;
+        }
+        p.rounde3{
+            border: 5px solid red;
+            padding: 5px;
+            background-color: aqua;
+            border-radius: 12px;
+        }
     </style>
 </head>
 <body>
@@ -91,12 +114,31 @@
 
     <hr>
     <h1>this is border part</h1>
-    <p style="border-style: dotted; background-color: white;">A Dotted Border</p>
-    <p style="border-style: dashed; background-color: white;">A Dashed Border</p>
-    <p style="border-style: double; background-color: white;">A Double Border</p>
-    <p style="border-style: groove; background-color: white;">A Groove Border</p>
-    <p style="border-style: solid; background-color: white;">A solid Border</p>
-    <p style="border-style: ridge; background-color: white;">Ridge Border</p>
-    <p style="border-style: inset; background-color: white;">Inset Border</p>
+    <p style="border-style: dotted; background-color: white; border-width: 10px; border-color: yellow;">A Dotted Border</p>
+    <p style="border-style: dashed; background-color: white; border-width: thick;">A Dashed Border</p>
+    <p style="border-style: double; background-color: white; border-width: 9px; border-color: red green blue yellow;">A Double Border</p>
+    <p style="border-style: groove; background-color: white; border-width: thin;">A Groove Border</p>
+    <p style="border-style: solid; background-color: white; border-width: 5px 20px;">A solid Border</p>
+    <p style="border-style: ridge; background-color: white; border-color: red;">Ridge Border</p>
+    <p style="border-style: inset; background-color: white; border-color: green;">Inset Border</p>
+
+    <hr>
+    <p style="border-style: dashed; background-color: wheat;">Single border</p>
+    <p style="border-style: dotted dashed;  background-color: wheat;">Double border</p>
+    <p style="border-style: solid dashed dotted;  background-color: wheat;">Three border</p>
+    <p style="border-style: solid dotted dashed double;  background-color: wheat;">Four border</p>
+
+    <hr>
+    <p style="border: 5px solid red; background-color: bisque;">shorthand border property</p>
+    <p style="border: 10px dotted lightblue; background-color: bisque;">shorthand border property</p>
+    <p style="border-bottom:5px dashed blueviolet; background-color:aqua;">border </p>
+
+    <hr>
+    <p class="normal1">Normal border</p>
+    <p class="rounde1">Round border</p>
+    <p class="rounde2">Rounder border</p>
+    <p class="rounde3">Roundest border</p>
+
+    
 </body>
 </html>
