@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1.left {
+        text-align: left;
+      }
+      h1.center {
+        text-align: center;
+      }
+      h1.right {
+        text-align: right;
+      }
+      div.main {
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+        text-align: justify;
+        padding: 20px;
+      }
+      p.a {
+        text-align-last: right;
+      }
+      p.b {
+        text-align-last: center;
+      }
+      p.c {
+        text-align-last: left;
+      }
+      p.dir {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+      }
+
+      img.a {
+        vertical-align: baseline;
+      }
+
+      img.b {
+        vertical-align: text-top;
+      }
+
+      img.c {
+        vertical-align: text-bottom;
+      }
+
+      img.d {
+        vertical-align: sub;
+      }
+
+      img.e {
+        vertical-align: super;
+      }
+      h1.dec{
+        text-decoration: overline;
+        text-decoration-color: aqua;
+        text-decoration-style: wavy;
+      }
+
+      h2.dec{
+        text-decoration: line-through;
+        text-decoration-color: blue;
+      }
+
+      h3.dec{
+        text-decoration: underline;
+        text-decoration-color: blueviolet;
+        text-decoration-style: wavy;
+      }
+
+      p.ex {
+        text-decoration: overline underline;
+        text-decoration-color: cornflowerblue;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 20%;
+      }
+      h2.sh{
+        text-shadow: 2px 2px red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="left">Text Align Is Left</h1>
+    <hr />
+    <h1 class="center">Text Align Is Center</h1>
+    <hr />
+    <h1 class="right">Text Align Is Right</h1>
+    <hr />
+    <h1 style="text-align: center">This is text align justify</h1>
+    <div class="main">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatum
+      voluptates non placeat perferendis delectus, temporibus recusandae
+      architecto veniam, ut culpa natus ullam eius error explicabo quod, nemo
+      incidunt earum.
+    </div>
+    <hr />
+    <h1 style="text-align: center">This is Text align last</h1>
+    <p class="a">this is text-align-last:right</p>
+    <p class="b">this is text-align-last:center</p>
+    <p class="c">this is text-align-last:left</p>
+    <hr />
+    <h1 style="text-align: center">this is text direction and unicode-bidi</h1>
+    <p>this paragraph is without using of text direction and unicode-bidi</p>
+    <p class="dir">
+      this paragraph is with using of text direction and unicode-bidi
+    </p>
+    <hr />
+
+    <h1>this is the text verticals align property</h1>
+    <h2>vertical-align: baseline (default):</h2>
+    <p>
+      An <img class="a" src="Image/Back.jpg.jpg" width="9" height="9" /> image
+      with a default alignment.
+    </p>
+
+    <h2>vertical-align: text-top:</h2>
+    <p>
+      An <img class="b" src="Image/Back.jpg.jpg" width="9" height="9" /> image
+      with a text-top alignment.
+    </p>
+
+    <h2>vertical-align: text-bottom:</h2>
+    <p>
+      An <img class="c" src="Image/Back.jpg.jpg" width="9" height="9" /> image
+      with a text-bottom alignment.
+    </p>
+
+    <h2>vertical-align: sub:</h2>
+    <p>
+      An <img class="d" src="Image/Back.jpg.jpg" width="9" height="9" /> image
+      with a sub alignment.
+    </p>
+
+    <h2>vertical-align: sup:</h2>
+    <p>
+      An <img class="e" src="Image/Back.jpg.jpg" width="9" height="9" /> image
+      with a super alignment.
+    </p>
+
+    <hr />
+    <h1>this is text decoration line and color and style property</h1>
+    <h1 class="dec">Overline text decoration</h1>
+    <h2 class="dec">Line-through text decoration</h2>
+    <h3 class="dec">Underline text decoration</h3>
+    <p class="ex">Overline and underline text decoration.</p>
+
+    <hr>
+    <h1>this is text shadow demo</h1>
+    <h2 class="sh">text shadow</h2>
+  </body>
+</html>
