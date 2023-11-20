@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div3 {
+        float: left;
+        padding: 10px;
+        border: 3px solid #73ad21;
+      }
+
+      .div4 {
+        padding: 10px;
+        border: 3px solid red;
+        clear: left;
+      }
+      .img2 {
+        float: right;
+      }
+
+      .clearfix {
+        overflow: auto;
+      }
+      .center {
+        margin: auto;
+        width: 60%;
+        border: 3px solid #73ad21;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>with using the clear property</h1>
+    <div class="div3">div3</div>
+    <div class="div4">
+      div4 - Here, clear: left; moves div4 down below the floating div3. The
+      value "left" clears elements floated to the left. You can also clear
+      "right" and "both".
+    </div>
+
+    <hr />
+
+    <h1>this is clearfix property</h1>
+    <div class="clearfix" style="border: 3px solid #73ad21">
+      <img
+        class="img2"
+        src="./Image/Back.jpg.jpg"
+        alt="Pineapple"
+        width="170"
+        height="170"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet...
+    </div>
+
+    <hr />
+
+    <h1>this is css align property</h1>
+    <div class="center">
+      <p>Hello World!</p>
+    </div>
+
+    <hr />
+    <h1></h1>
+  </body>
+</html>
