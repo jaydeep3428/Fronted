@@ -6,20 +6,56 @@
     <title>Document</title>
     <style>
         .div1{
+            width: 200px;
             height: 200px;
             background-image: linear-gradient(red,green);
         }
         .div2{
+            width: 200px;
             height: 200px;
             background-image: linear-gradient(to right,red,yellow);
         }
         .div3{
+            width: 200px;
             height: 200px;
             background-image: linear-gradient(red,orange,lightgreen);
         }
         .div4{
+            width: 200px;
             height: 200px;
             background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+        .div5{
+            width: 50%;
+            height: 200px;
+            background-image: radial-gradient(red,yellow,green);
+        }
+        .div6{
+            width: 50%;
+            height: 200px;
+            background-image: radial-gradient(red 10%,yellow 15%,green 60%);
+        }
+        .div7{
+            width: 150px;
+            height: 200px;
+            background-image: radial-gradient(circle,red ,yellow ,green);
+        }
+        .div8{
+            width: 150px;
+            height: 150px;
+            background-image: repeating-radial-gradient(red ,yellow 10%,green 15%);
+        }
+        .div9{
+            width: 150px;
+            height: 150px;
+            background-image: conic-gradient(red,black,blue);
+            border-radius: 50%;
+        }
+        .div10{
+            width: 150px;
+            height: 150px;
+            background-image: repeating-conic-gradient(red,black 10%,blue 20%);
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -35,5 +71,23 @@
     <hr>
     <h1>Linear repeating-gradient</h1>
     <div class="div4"></div>
+    <hr>
+    <h1>radial-gradient</h1>
+    <div class="div5"></div>
+    <hr>
+    <h1>radial-gradient</h1>
+    <div class="div6"></div>
+    <hr>
+    <h1>radial circle-gradient</h1>
+    <div class="div7"></div>
+    <hr>
+    <h1>repeating-radial-gradient</h1>
+    <div class="div8"></div>
+    <hr>
+    <h1>conic-gradient</h1>
+    <div class="div9"></div>
+    <hr>
+    <h1>conic-gradient</h1>
+    <div class="div10"></div>
 </body>
 </html>
