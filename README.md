@@ -1,4 +1,4 @@
-Live URL Link : http://127.0.0.1:5501/index.html
+Live URL Link : https://jaydeep3428.github.io/Fronted/
 
 Task : CSS
 
