@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-top: 20px;
+            padding: 5px;
+        }
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            animation-name: ex;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ex{
+            from{
+                background-color: aquamarine;
+            }
+            to{
+                background-color: blue;
+            }
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            animation-name: ex1;
+            animation-duration: 5s;
+            position: relative;
+            animation-delay: 2s;
+        }
+        @keyframes ex1{
+            0%{background-color: red; left: 0px; top: 0px;}
+            25%{background-color: yellow; left: 200px; top: 0px;}
+            50%{background-color: green; left: 200px; top: 200px;}
+            75%{background-color: blue; left: 0px; top: 200px;}
+            100%{background-color: lightblue; left: 0; top: 0px;}
+        }
+        .div3{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            animation-name: ex2;
+            animation-duration: 5s;
+            position: relative;
+            animation-delay: -2s;
+        }
+        @keyframes ex2{
+            0%{background-color: red; left: 0px; top: 0px;}
+            25%{background-color: yellow; left: 200px; top: 0px;}
+            50%{background-color: green; left: 200px; top: 200px;}
+            75%{background-color: blue; left: 0px; top: 200px;}
+            100%{background-color: lightblue; left: 0; top: 0px;}
+        }
+        .div4{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            animation-name: ex3;
+            animation-duration: 5s;
+            position: relative;
+            animation-direction: reverse;
+        }
+        @keyframes ex3{
+            0%{background-color: red; left: 0px; top: 0px;}
+            25%{background-color: yellow; left: 200px; top: 0px;}
+            50%{background-color: green; left: 200px; top: 200px;}
+            75%{background-color: blue; left: 0px; top: 200px;}
+            100%{background-color: lightblue; left: 0; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div class="div1">this is css animation and animation-iteration-count:infinite</div>
+    <div class="div2">this is css multiple color with</div>
+    <div class="div3">this is css multiple color with animation-delay:-2s</div>
+    <div class="div4">this is css animation and animation-direction:reverse</div>
+</body>
+</html>
