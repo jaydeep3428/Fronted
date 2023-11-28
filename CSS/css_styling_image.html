@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .img1 {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+      }
+      .img2 {
+        height: 250px;
+        width: 250px;
+        border: 2px solid skyblue;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      .img3 {
+        border: 2px solid black;
+        padding: 5px;
+      }
+      .img3:hover {
+        border: 2px solid skyblue;
+      }
+      .img4 {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .img5 {
+        height: 250px;
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      body {
+        margin: 25px;
+      }
+
+      div.polaroid {
+        width: 500px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+      }
+
+      div.container {
+        text-align: center;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">CSS Image Styling</h1>
+    <hr />
+    <p>this is image is circle with using of border radius:50%</p>
+    <img class="img1" src="./Image/2.jpg" alt="#" />
+    <hr />
+    <p>this is thumbnail image</p>
+    <img class="img2" src="./Image/download.jpg" alt="#" />
+    <hr />
+    <p>this is thumbnail image as link</p>
+    <a href="./Image/download (1).jpg" target="_blank">
+      <img class="img3" src="./Image/download (1).jpg" alt="#" />
+    </a>
+    <hr />
+    <p>CSS Responsive image</p>
+    <img class="img4" src="./Image/2.jpg" alt="#" width="600" height="400" />
+    <hr />
+    <p>Center a image</p>
+    <img class="img5" src="./Image/Back.jpg.jpg" alt="#" />
+    <hr />
+    <p>Responsive Image/Cards</p>
+    <div class="polaroid">
+      <img src="./Image/images.jpg" alt="5 Terre" style="width: 500px" />
+      <div class="container">
+        <p>Cinque Terre</p>
+      </div>
+    </div>
+
+    <div class="polaroid">
+      <img
+        src="./Image/images (1).jpg"
+        alt="Norther Lights"
+        style="width: 500px"
+      />
+      <div class="container">
+        <p>Northern Lights</p>
+      </div>
+    </div>
+  </body>
+</html>
