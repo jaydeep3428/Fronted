@@ -1,24 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .img{
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-        }
+      .fill {
+        object-fit: fill;
+      }
+      .contain {
+        object-fit: contain;
+      }
+      .cover {
+        object-fit: cover;
+      }
+      .scale-down {
+        object-fit: scale-down;
+      }
+      .none {
+        object-fit: none;
+      }
     </style>
-</head>
-<body>
-    <h1 style="text-align: center;">CSS Object-Fit</h1>
+  </head>
+  <body>
+    <h1 style="text-align: center;">The object-fit Property</h1>
+
     <hr>
-    <p>simple image</p>
-    <img src="./Image/2.jpg" alt="#" >
+
+    <h2>Simple image</h2>
+    <img src="./Image/2.jpg" alt="Paris" style="width: 200px; height: 300px" />
+
     <hr>
-    <p>object-fit: cover</p>
-    <img class="img" src="./Image/2.jpg" alt="#" width="500px" height="600px">
-</body>
+
+    <h2>object-fit: fill</h2>
+    <img
+      class="fill"
+      src="./Image/2.jpg"
+      alt="Paris"
+      style="width: 200px; height: 300px"
+    />
+
+    <hr>
+
+    <h2>object-fit: contain</h2>
+    <img
+      class="contain"
+      src="./Image/2.jpg"
+      alt="Paris"
+      style="width: 200px; height: 300px"
+    />
+
+    <hr>
+
+    <h2>object-fit: cover</h2>
+    <img
+      class="cover"
+      src="./Image/2.jpg"
+      alt="Paris"
+      style="width: 200px; height: 300px"
+    />
+
+    <hr>
+
+    <h2>object-fit: scale-down</h2>
+    <img
+      class="scale-down"
+      src="./Image/2.jpg"
+      alt="Paris"
+      style="width: 200px; height: 300px"
+    />
+
+    <hr>
+
+    <h2>object-fit: none</h2>
+    <img
+      class="none"
+      src="./Image/2.jpg"
+      alt="Paris"
+      style="width: 200px; height: 300px"
+    />
+  </body>
 </html>
