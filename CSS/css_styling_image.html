@@ -52,6 +52,28 @@
         text-align: center;
         padding: 10px 20px;
       }
+
+      div.maindiv {
+        position: relative;
+      }
+      div.childdiv {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 30px;
+      }
+
+      div.maindiv1 {
+        position: relative;
+      }
+      div.childdiv1 {
+        position: absolute;
+        top: 50%;
+        left: 19%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+      }
+
     </style>
   </head>
   <body>
@@ -92,5 +114,17 @@
         <p>Northern Lights</p>
       </div>
     </div>
+    <hr />
+    <p>Image Text</p>
+    <div class="maindiv">
+      <img src="./Image/img_5terre.jpg" alt="#" height="400px" width="500px"/>
+      <div class="childdiv">top left</div>
+    </div>
+    <div class="maindiv1">
+      <img src="./Image/images.jpg" alt="#" height="400px" width="500px">
+      <div class="childdiv1">Text Center</div>
+    </div>
+    <hr>
+    
   </body>
 </html>
