@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            background-color: blueviolet;
+            flex-wrap: nowrap;
+            justify-content: center;    
+            column-gap: 1rem;
+            padding: 2rem;
+        }
+        .flex div{
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            /* margin: 10px; */
+            /* padding: 5px; */
+            text-align: center;
+            background-color: white;
+            font-size: 30px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            display: grid;
+            place-items: center;
+            
+        }
+        @media screen and (max-width:425px) {
+            .flex{
+                flex-direction: column; 
+                align-items: center;
+                row-gap: 1rem;
+            } 
+            .flex div{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+</body>
+</html>
