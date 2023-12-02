@@ -2,4 +2,4 @@ Live URL Link : https://jaydeep3428.github.io/Fronted/
 
 Task : CSS
 
-Topic : CSS Pagination,CSS All Columns Property,CSS User interface,CSS Box Sizing,CSS Media queries,CSS Flex-Box and improving the index.html file styling . 
+Topic : CSS Flexbox,CSS Flex Responsive,CSS Responsive,CSS RWD Intro,CSS RWD Grid View,CSS Media Queries,CSS Images,CSS Videos,CSS Grid . 
