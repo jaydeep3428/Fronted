@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .flex{
-            display: flex;
-            background-color: blueviolet;
-            flex-wrap: nowrap;
-            justify-content: center;    
-            column-gap: 1rem;
-            padding: 2rem;
+      .flex {
+        display: flex;
+        background-color: blueviolet;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+      }
+      .flex div {
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+      }
+      @media screen and (max-width: 480px) {
+        .flex {
+          flex-direction: column;
+          row-gap: 1rem;
         }
-        .flex div{
-            border: 2px solid black;
-            width: 100px;
-            height: 100px;
-            border-radius: 5px;
-            /* margin: 10px; */
-            /* padding: 5px; */
-            text-align: center;
-            background-color: white;
-            font-size: 30px;
-            /* display: flex;
-            align-items: center;
-            justify-content: center; */
-            display: grid;
-            place-items: center;
-            
+        .flex div {
+          width: 100%;
         }
-        @media screen and (max-width:425px) {
-            .flex{
-                flex-direction: column; 
-                align-items: center;
-                row-gap: 1rem;
-            } 
-            .flex div{
-                width: 90%;
-            }
+      }
+
+      .flex1 {
+        display: flex;
+        flex-direction: row;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+      }
+      .flex1 div {
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+      }
+      @media screen and (max-width: 480px) {
+        .flex1 {
+          flex-direction: column;
+          row-gap: 1rem;
         }
+        .flex1 div {
+          width: 100%;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <h1 style="text-align: center">CSS Responsive Flex-Box</h1>
+    <hr />
+    <h2>Display:Flex Property</h2>
     <div class="flex">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
     </div>
-</body>
+    <hr />
+    <h2>Flex:Direction Property</h2>
+    <div class="flex1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </body>
 </html>
