@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : CSS
+Task : HTML/CSS Navbar
 
-Topic : CSS Aspect Ratio Image , CSS Aspect Ratio Video , create one navbar and perform its praticle. 
+Topic : Complete total 7 navbar out of 9 using flex,position,transform .
