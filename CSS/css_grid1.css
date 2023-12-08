@@ -1,0 +1,45 @@
+.main{
+    background-color: rgb(99, 99, 254);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+.main div{
+    background-color: lightblue;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+.main .containt1{
+    grid-column: 1 / 4;
+    grid-row: 1 / span 2;
+}
+.main .item1{
+    grid-column: 2 / span 3;
+}
+.main2{
+    background-color: rgb(99, 99, 254);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+.main2 div{
+    background-color: lightblue;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+.main2 .item1{
+    grid-column: 1 / 4;
+}
+.main2 .item2{
+    grid-row: 2 / 4;
+}
+.main2 .item4{
+    grid-column: 3 / 3;
+}
+.main2 .item5{
+    grid-column: 2 / 4;
+}
