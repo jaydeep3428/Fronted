@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : HTML/CSS Navbar/Grid Task
+Task : HTML/CSS Grid Task
 
-Topic : Complete total 9 navbar out of 9 using flex,position,transform and create one grid task using grid .
+Topic : Complete and create one grid task using grid .
