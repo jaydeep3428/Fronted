@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : HTML/CSS Flex Box Task
+Task : HTML/CSS Resume Task
 
-Topic : Complete the flex box task using flex and CSS Accent color,CSS Border Block,CSS Border-inline,CSS Z-index, and Revision of CSS Property .
+Topic : Create And Complete The Resume Task Using flex ,grid ,media query with mobile responsive .

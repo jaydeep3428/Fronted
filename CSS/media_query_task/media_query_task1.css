@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #757575;
+}
+body {
+  text-transform: capitalize;
+  accent-color: #009688;
+}
+.box {
+  box-shadow: 2px 3px 3px rgb(134, 129, 129);
+  background-color: white;
+}
+.main {
+  width: 100%;
+  background-color: #eeeeee;
+  display: grid;
+  place-items: center;
+}
+.main .content {
+  height: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px 5px;
+}
+.box1 {
+  grid-row: 1 / span 2;
+  height: auto;
+}
+.photo {
+  position: relative;
+  height: 250px;
+}
+.text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px 10px;
+  font-weight: bolder;
+  color: black;
+  font-size: 20px;
+}
+.img img{
+    width: 100%;
+    height: 250px;
+}
+.details{
+    padding: 20px;
+}
+.details p{
+    margin: 15px 0;
+}
+.details h1{
+    margin: 15px 0;
+}
+.details progress{
+    width: 100%;
+    height: 30px;
+}
+.box2{
+    padding: 20px;
+    height: auto;
+}
+.datalist1{
+    padding: 5px;
+}
+.details1{
+    margin-top: 20px;
+    padding: 10px;
+}
+.details1 p{
+    padding: 10px 0;
+}
+.details1 span{
+    background-color: #009688;
+    padding: 2px;
+    border-radius: 4px;
+    color: white;
+}
+.box3{
+    padding: 20px;
+    height: auto;
+}
+.datalist2{
+    padding: 5px;
+}
+.details2{
+    margin-top: 20px;
+    padding: 10px;
+}
+.details2 p{
+    padding: 10px 0;
+}
+.footer{
+    background-color: #009688;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul{
+    list-style-type: none;
+}
+ul li{
+    color: black;
+}
+i::after{
+    content: "";
+    margin-left: 8px;
+}
+@media screen and (min-width: 768px) {
+    .main .content {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
