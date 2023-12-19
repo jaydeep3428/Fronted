@@ -50,7 +50,8 @@ body{
     font-size: 14px;
     font-weight: bold;
 }
-.second2 a::before{
+.second2 a + a::before {
+    color: black;
     padding: 10px;
-    content: "|";
-}
+    content: "|\00a0";
+  }
