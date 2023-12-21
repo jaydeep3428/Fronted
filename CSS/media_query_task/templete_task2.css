@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/batman__dark-wallpaper-1920x1200.jpg);
+}
+.main{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+.submain{
+    width: 80%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.navbar ul{
+    color: white;
+}
+ .menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: larger;
+}
+ul li a:hover{
+    color: rgb(157, 1, 1);
+}
+.button .btn{
+    padding: 5px 24px;
+    border-radius: 30px;
+    font-size: larger;
+    margin-left: 10px;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(157, 1, 1);
+    color: white;
+}

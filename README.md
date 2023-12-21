@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : HTML / CSS media query task
+Task : HTML / CSS templete task-01
 
-Topic : create and complete media query task using media query,flex,grid and with responsive .
+Topic : create and complete templete task-01 with responsive .
