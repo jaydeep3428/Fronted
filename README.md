@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : HTML / CSS templete task-02 and BOOTSTRAP
+Task : BOOTSTRAP And HTML & CSS
 
-Topic : create and complete templete task-02 and basic bootstrap learning .
+Topic : Bs container,Bs grid basic,Bs typography,Bs colors,Bs text color .
