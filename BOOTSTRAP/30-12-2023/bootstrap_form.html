@@ -20,9 +20,9 @@
     <div class="container-fluid bg-warning-subtle text-center text-danger p-2">
       <h1>Forms</h1>
     </div>
-
-    <div class="container bg-warning mt-2 p-4">
-      <div class="container-fluid bg-warning-subtle text-center">
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="container-fluid bg-danger text-center">
         <h3>stacked Form</h3>
       </div>
       <form action="#">
@@ -47,6 +47,285 @@
             <input class="form-check-input" type="checkbox" name="remember" />
             Remember me
           </label>
+        </div>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="container-fluid bg-danger text-center mb-3">
+        <h3>Inline Form</h3>
+      </div>
+      <form action="#">
+        <div class="row">
+          <div class="col">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Enter password"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="color"
+              class="form-control form-control-color"
+              id="myColor"
+              value="#CCCCCC"
+              title="Choose a color"
+            />
+          </div>
+          <div class="col">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 mb-3 p-4">
+      <div class="container bg-danger text-center">
+        <h3>Form Select Menu</h3>
+      </div>
+      <form action="#">
+        <label for="select">Select list:</label>
+        <select name="sellist-1" id="sel1" class="form-select">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+        </select>
+        <br />
+        <label for="select">Mutiple select list:</label>
+        <select name="sellist-2" id="sel2" multiple class="form-select">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+          <option value="">6</option>
+          <option value="">7</option>
+          <option value="">8</option>
+        </select>
+        <br />
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="container bg-danger text-center">
+        <h3>Data List</h3>
+      </div>
+      <form action="#">
+        <label for="browser" class="form-label"
+          >Choose your browser from the list:</label
+        >
+        <input
+          class="form-control"
+          list="browsers"
+          name="browser"
+          id="browser"
+        />
+        <datalist id="browsers">
+          <option value="Edge"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+
+        <br />
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="conatiner bg-danger text-center">
+        <h3>CheckBoxes</h3>
+      </div>
+      <form action="#">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" />
+          <label for="form-check-label">Option 1</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" />
+          <label for="form-check-label">Option 2</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" />
+          <label for="form-check-label">Option 3</label>
+        </div>
+        <br />
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="conatiner bg-danger text-center">
+        <h3>Radio Buttons</h3>
+      </div>
+      <form action="#">
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="rd" />
+          <label for="form-check-label">Option 1</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="rd" />
+          <label for="form-check-label">Option 2</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="rd" />
+          <label for="form-check-label">Option 3</label>
+        </div>
+        <br />
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="container bg-danger text-center">
+        <h3>Toggle Switch</h3>
+      </div>
+      <div class="container form-check form-switch">
+        <form action="#">
+          <input type="checkbox" class="form-check-input" />
+          <label for="#">Dark Mode</label>
+        </form>
+      </div>
+      <br />
+      <button class="btn btn-primary">Submit</button>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="container bg-danger text-center">
+        <h3>Input Group</h3>
+      </div>
+      <form action="#">
+        <div class="input-group mb-3 mt-3">
+          <span class="input-group-text">@</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            name="usrname"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Your Email"
+            name="usrname"
+          />
+          <span class="input-group-text">@example.com</span>
+        </div>
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="container bg-danger text-center">
+        <h3>Input Group with Checkboxes and Radios</h3>
+      </div>
+      <div class="input-group mb-3 mt-3">
+        <div class="input-group-text">
+          <input type="checkbox" />
+        </div>
+        <input type="text" class="form-control" placeholder="Some text" />
+      </div>
+      <div class="input-group mb-3 mt-3">
+        <div class="input-group-text">
+          <input type="checkbox" />
+        </div>
+        <input type="text" class="form-control" placeholder="Some text" />
+      </div>
+      <div class="input-group mb-3 mt-3">
+        <div class="input-group-text">
+          <input type="radio" name="rd1" />
+        </div>
+        <input type="text" class="form-control" placeholder="Some text" />
+      </div>
+      <div class="input-group mb-3 mt-3">
+        <div class="input-group-text">
+          <input type="radio" name="rd1" />
+        </div>
+        <input type="text" class="form-control" placeholder="Some text" />
+      </div>
+      <button class="btn btn-primary">Submit</button>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="container bg-danger text-center">
+        <h3>Input Group Buttons</h3>
+      </div>
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-primary" type="button">
+          Basic Button
+        </button>
+        <input type="text" class="form-control" placeholder="Some text" />
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Some text" />
+        <button class="btn btn-success" type="button">Go</button>
+      </div>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Some text" />
+        <button class="btn btn-primary" type="button">Ok</button>
+        <button class="btn btn-danger" type="button">Cancel</button>
+      </div>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="container text-center bg-danger">
+        <h3>Input Groups with Dropdown Button</h3>
+      </div>
+      <div class="input-group mt-3">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          Drop-Down
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Link 1</a></li>
+          <li><a class="dropdown-item" href="#">Link 2</a></li>
+          <li><a class="dropdown-item" href="#">Link 3</a></li>
+        </ul>
+        <input type="text" class="form-control" placeholder="Username" />
+      </div>
+    </div>
+    <br />
+    <div class="container bg-danger-subtle mt-2 p-4">
+      <div class="container text-center bg-danger">
+        <h3>Floating Labels - Inputs</h3>
+      </div>
+      <form action="#">
+        <div class="form-floating mt-3 mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+            name="email"
+          />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-floating mt-3 mb-3">
+          <input
+            type="password"
+            class="form-control"
+            id="pass"
+            placeholder="Enter email"
+            name="pass"
+          />
+          <label for="pass">Password</label>
         </div>
         <button type="button" class="btn btn-primary">Submit</button>
       </form>
