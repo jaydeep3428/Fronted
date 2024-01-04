@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : BOOTSTRAP And HTML & CSS
+Task : BOOTSTRAP Figma Task-1
 
-Topic : Bootstrap carousel and revision of some bootstrap classes.
+Topic : Bootstrap Figma Task-1.
