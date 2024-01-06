@@ -92,4 +92,46 @@ ul li a {
 .row5 {
   width: 40%;
 }
-
+.row6 {
+  margin-left: 50px;
+}
+.contact {
+  margin-top: 150px;
+}
+.col5 img {
+  background-color: #0db760;
+  padding: 8px;
+  border-radius: 10px;
+}
+.btn2 button {
+  background-color: #0db760;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.icon span {
+  background-color: #0db760;
+  border-radius: 60%;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .first_page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  .row {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
