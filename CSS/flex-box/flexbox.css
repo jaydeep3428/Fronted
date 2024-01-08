@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/musical-background-2842924_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 90%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+.nav img {
+  filter: brightness(5%);
+}
+.nav button {
+  background-color: transparent;
+  max-width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 24px #81695a;
+}
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.navbar ul {
+  list-style-type: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+.content_placeholder {
+  height: 400px;
+  background-color: white;
+  margin-top: 50px;
+  box-shadow: 5px 5px 24px #81695a;
+  position: relative;
+}
+.sidebar {
+  background-color: #ca613e;
+  height: inherit;
+  width: 20%;
+}
+.sidebar ul {
+  list-style-type: none;
+  display: block;
+}
+.sidebar ul li a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  line-height: 50px;
+}
+.sidebar ul li:hover {
+  background-color: #691c03;
+}
+.content_placeholder .content {
+  width: 80%;
+  height: inherit;
+  position: absolute;
+  background-image: url(./img/pexels-daniel-reche-3721941.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  background-position: 0 -130px;
+}
+.movieinfo {
+  width: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 50px 1fr;
+  color: white;
+}
+.box1 {
+  grid-row: 1 / span 4;
+  align-self: center;
+  justify-self: center;
+}
+.box2 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  border-bottom: 2px solid white;
+}
+.box3 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+.box4 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  border-bottom: 2px solid white;
+}
+.box5 {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 3;
+}
+.box6 {
+  border-bottom: 2px solid white;
+}
+.box5 ul {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .sidebar ul {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+  }
+  .movieinfo {
+    height: inherit;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

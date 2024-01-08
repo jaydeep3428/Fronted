@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #borderimg1 {
+        border: 10px solid;
+        padding: 15px;
+        border-image: url(./Image/2.jpg) 30 round;
+      }
+      #borderimg2 {
+        border: 10px solid;
+        padding: 15px;
+        border-image: url(./Image/download.jpg) 30 stretch;
+      }
+      #borderimg3 {
+        border: 10px solid;
+        padding: 15px;
+        border-image-source: url(./Image/images.jpg);
+        border-image-slice: 30;
+      }
+      #borderimg4 {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image-source: url(./Image/img_5terre.jpg);
+        border-image-repeat: round;
+        border-image-slice: 30;
+        border-image-width: 30px;
+        border-image-outset: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>this is border-image property</h1>
+    <p id="borderimg1">this is border-image rounded</p>
+    <p id="borderimg2">this is border-image streches</p>
+    <p id="borderimg3">this is border-image source and slice property</p>
+    <p id="borderimg4">this is border-image width and outset property</p>
+    <hr>
+    
+  </body>
+</html>

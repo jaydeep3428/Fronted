@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightgray;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.main .child1{
+    margin: 15px 0 15px 100px;
+}
+.main .child2 a{
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.main .child3{
+    margin: 0 100px 0 0;
+}
+.main .child3 .btn1{
+    font-size: 14px;
+    padding: 5px 24px;
+    border: 2px solid gray;
+    border-radius: 30px;
+    background-color: #fff;
+    color: gray;
+    margin: 5px;
+}

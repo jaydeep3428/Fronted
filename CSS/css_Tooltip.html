@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .maindiv {
+        border: 1px solid black;
+        position: relative;
+        display: inline-block;
+      }
+      .maindiv .childdiv {
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+
+        top: -5px;
+        left: 105%;
+      }
+      .maindiv:hover .childdiv {
+        visibility: visible;
+      }
+
+      .maindiv1 {
+        border: 1px solid black;
+        position: relative;
+        display: inline-block;
+      }
+      .maindiv1 .childdiv1 {
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+
+        top: -5px;
+        right: 105%;
+      }
+      .maindiv1:hover .childdiv1 {
+        visibility: visible;
+      }
+
+      .maindiv2 {
+        border: 1px solid black;
+        position: relative;
+        display: inline-block;
+      }
+      .maindiv2 .childdiv2 {
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+
+        bottom: 100%;
+        left: 50%;
+        margin-left: -100px;
+      }
+      .maindiv2:hover .childdiv2 {
+        visibility: visible;
+      }
+
+      .maindiv3 {
+        border: 1px solid black;
+        position: relative;
+        display: inline-block;
+      }
+      .maindiv3 .childdiv3 {
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+
+        top: 100%;
+        left: 50%;
+        margin-left: -100px;
+      }
+      .maindiv3:hover .childdiv3 {
+        visibility: visible;
+      }
+
+      .maindiv4 {
+        position: relative;
+        display: inline-block;
+        border: 1px solid black;
+      }
+
+      .maindiv4 .childdiv4 {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: 50%;
+        margin-left: -60px;
+      }
+
+      .maindiv4 .childdiv4::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+      }
+
+      .maindiv4:hover .childdiv4 {
+        visibility: visible;
+      }
+
+      .maindiv5 {
+        position: relative;
+        display: inline-block;
+        border: 1px solid black;
+      }
+      .maindiv5 .childdiv5 {
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        right: 100%;
+
+        opacity: 0;
+        transition: opacity 1s;
+      }
+      .maindiv5 .childdiv5::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent black;
+      }
+      .maindiv5:hover .childdiv5 {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body style="text-align: center">
+    <h1>CSS Tool-tip</h1>
+    <hr />
+    <h2>CSS Tool-tip Right side Tool-tip</h2>
+    <div class="maindiv">
+      HTML
+      <span class="childdiv">HTML stands for hyper text mark-up language.</span>
+    </div>
+    <hr />
+    <h2>CSS Tool-tip left side Tool-tip</h2>
+    <div class="maindiv1">
+      HTML
+      <span class="childdiv1"
+        >HTML stands for hyper text mark-up language.</span
+      >
+    </div>
+    <hr />
+    <h2>CSS Tool-tip Top side Tool-tip</h2>
+    <div class="maindiv2">
+      HTML
+      <span class="childdiv2"
+        >HTML stands for hyper text mark-up language.</span
+      >
+    </div>
+    <hr />
+    <h2>CSS Tool-tip Bottom side Tool-tip</h2>
+    <div class="maindiv3">
+      HTML
+      <span class="childdiv3"
+        >HTML stands for hyper text mark-up language.</span
+      >
+    </div>
+
+    <hr />
+
+    <h2>CSS Tool-tip Top Arrow Tool-tip</h2>
+    <div class="maindiv4">
+      HTML
+      <span class="childdiv4"
+        >HTML stands for hyper text mark-up language.</span
+      >
+    </div>
+
+    <hr />
+
+    <h2>CSS Tool-tip Right Arrow and fade(Animation) Tool-tip</h2>
+    <div class="maindiv5">
+      HTML
+      <span class="childdiv5"
+        >HTML stands for hyper text mark-up language.</span
+      >
+    </div>
+  </body>
+</html>
