@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.first_page {
+  margin-top: 50px;
+}
 .logo {
   color: #0db760;
   font-size: 32px;
@@ -123,15 +126,118 @@ ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
   }
   .nav ul {
     flex-direction: column;
   }
+  .logo {
+    margin-top: 20px;
+  }
+  .nav {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
   .row {
     width: 100%;
     height: auto;
-    flex-direction: column;
+  }
+  .second_page {
+    display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .back {
+    height: auto;
+  }
+  .review {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .row1 {
+    flex-direction: column;
+  }
+  .skill {
+    margin-top: 50px;
+  }
+  .row2 {
+    flex-direction: column;
+  }
+  .third_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .third_page1 {
+    margin: 48px;
+    margin-top: 0;
+  }
+  .crousel1 {
+    display: flex;
+    justify-content: center;
+  }
+  .row3 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .row5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .crousel1 {
+    margin-top: 50px;
+  }
+  .main {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .fourth_page {
+    flex-direction: column;
+  }
+  .fourth_page .img1 {
+    width: 200px;
+    height: auto;
+  }
+  .crousel2 {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* .row4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } */
+  .row6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .row8 {
+    flex-direction: column;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .contact {
+    margin-top: 90px;
+  }
+  .footer2 {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
