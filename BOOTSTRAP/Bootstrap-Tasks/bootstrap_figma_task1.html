@@ -24,27 +24,47 @@
   <body>
     <div class="container-fluid">
       <div class="first_page container d-flex justify-content-between p-0">
-        <div class="logo">
-          <img src="../img/Vector.svg" alt="#" />
-          Design
-        </div>
-        <div class="nav d-flex justify-content-center">
-          <ul class="d-flex align-items-center gap-5 p-0 m-0">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Testimonial</a></li>
-          </ul>
-        </div>
-        <div class="btn">
-          <button class="btn rounded-3">Download CV</button>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg dark">
+            <div class="container-fluid p-0">
+              <a href="#" class="navbar-brand fw-bold">
+                <img class="img-fluid" src="../img/Vector.svg" alt="logo" />
+                <span class="logo">Design</span>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav_ul"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse mt-2" id="nav_ul">
+                <ul class="navbar-nav nav_a d-flex ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonial</a>
+                  </li>
+                </ul>
+                <button class="btn ms-auto rounded-3">Download CV</button>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
 
       <div class="second_page container mt-5">
-        <div class="row">
+        <div class="row1 d-flex justify-content-between">
           <div
-            class="welcome col-sm-12 col-md-12 col-lg-6 d-flex flex-column align-items-start justify-content-center mt-5"
+            class="welcome d-flex flex-column align-items-start justify-content-center mt-5"
           >
             <span class="text1">Welcome</span>
             <p class="text2 p1">
@@ -62,18 +82,18 @@
               <img src="../img/Frame.svg" alt="#" />
             </span>
           </div>
-          <div class="col-12 col-lg-6 d-flex justify-content-end">
+          <div class="d-flex md:justify-content-end justify-content-center">
             <div class="back">
               <img
                 src="../img/image 206.png"
                 alt="#"
-                class="img-fluid z-3 position-relative"
-                style="top: -80px"
+                class="img4 img-fluid z-3 position-relative"
               />
             </div>
           </div>
         </div>
       </div>
+      <!-- style="top: -80px" -->
 
       <div class="review container p-0">
         <div class="row1 d-flex justify-content-between">
@@ -95,9 +115,9 @@
       </div>
 
       <div class="skill container">
-        <div class="row2 d-flex">
+        <div class="row2 d-flex justify-content-between">
           <div
-            class="col-sm-12 col-md-12 col-lg-6 d-flex flex-column align-items-start justify-content-center mt-5"
+            class="d-flex flex-column align-items-center justify-content-center mt-5"
           >
             <span class="text1">My Skills</span>
             <p class="text5 p1">
@@ -114,7 +134,7 @@
               <button class="btn1">Hire Me</button>
             </span>
           </div>
-          <div class="col-12 col-lg-6 d-flex justify-content-end">
+          <div>
             <div class="third_page d-flex align-items-center">
               <div class="m-5">
                 <div class="shadow mb-5 p-4 rounded">
@@ -150,9 +170,11 @@
       </div>
 
       <div class="crousel1 container">
-        <div class="row3 d-flex gap-5">
+        <div
+          class="row3 d-flex justify-content-center align-items-center gap-5"
+        >
           <div
-            class="row5 d-flex flex-column align-items-start justify-content-center mt-5"
+            class="row5 d-flex flex-column align-items-center justify-content-center mt-5"
           >
             <span class="text1">Portfolio</span>
             <p class="text5 p1">
@@ -171,19 +193,41 @@
           <div class="main mt-5">
             <div class="fourth_page img d-flex">
               <div class="img1">
-                <img src="../img/App Landing Page 3.png" alt="#" />
-              </div>
-              <div class="img1">
-                <img src="../img/Restaurant landing page 1.png" alt="#" />
-                <img src="../img/Group 8935.svg" alt="#" class="m-5" />
+                <img
+                  src="../img/App Landing Page 3.png"
+                  alt="#"
+                  class="img-fluid"
+                />
               </div>
               <div class="img1">
                 <img
+                  src="../img/Restaurant landing page 1.png"
+                  alt="#"
+                  class="img-fluid"
+                />
+                <img
+                  src="../img/Group 8935.svg"
+                  alt="#"
+                  class="m-5"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="img1">
+                <img
+                  class="img-fluid"
                   src="../img/Furniture E-commerce Website UIUX Design 1.png"
                   alt="#"
                 />
-                <img src="../img/arrow-right (1).svg" alt="#" class="mt-5" />
-                <img src="../img/arrow-right.svg" alt="#" class="mt-5" />
+                <img
+                  src="../img/arrow-right (1).svg"
+                  alt="#"
+                  class="mt-5 img-fluid"
+                />
+                <img
+                  src="../img/arrow-right.svg"
+                  alt="#"
+                  class="mt-5 img-fluid"
+                />
               </div>
             </div>
           </div>
@@ -255,13 +299,15 @@
       </div>
 
       <div class="contact container">
-        <div class="row7 d-flex justify-content-center">
-          <div class="col4 d-flex flex-column align-items-center">
+        <div class="row7 d-flex justify-content-center align-items-center">
+          <div
+            class="col4 d-flex flex-column justify-content-center align-items-center"
+          >
             <span class="text1">Contact</span>
             <p class="text5 p1">
               Let’s Discuss Your <span style="color: #0db760">Project</span>
             </p>
-            <p class="">
+            <p class="p1">
               Let’s make something new, different and more meaningful or make
               <br />
               thing more visual or conceptual
