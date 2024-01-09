@@ -13,16 +13,13 @@
   font-family: Poppins;
   line-height: 48px;
 }
-.nav ul li {
-  list-style-type: none;
-}
-ul li a {
-  text-decoration: none;
+.nav-link {
   color: #000;
   font-size: 16px;
   font-weight: 500;
+  margin-left: 20px;
 }
-.btn button {
+.btn {
   border: 2px solid #0db760;
   color: #000;
   font-size: 16px;
@@ -117,8 +114,12 @@ ul li a {
   background-color: #0db760;
   border-radius: 60%;
   color: #ffffff;
+  padding: 10px;
 }
-@media screen and (max-width: 768px) {
+.back img {
+  top: -80px;
+}
+@media screen and (max-width: 1000px) {
   .first_page {
     width: 100%;
     height: auto;
@@ -128,19 +129,22 @@ ul li a {
     align-items: center;
     margin-top: 0;
   }
-  .nav ul {
-    flex-direction: column;
+  .back img {
+    top: 0;
   }
-  .logo {
-    margin-top: 20px;
+  .row5 {
+    width: 100%;
   }
   .nav {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .row {
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .second_page {
     display: flex;
@@ -156,6 +160,7 @@ ul li a {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .row1 {
     flex-direction: column;
@@ -179,6 +184,7 @@ ul li a {
   .crousel1 {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .row3 {
     width: 100%;
@@ -198,6 +204,7 @@ ul li a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
   .fourth_page {
     flex-direction: column;
@@ -212,12 +219,6 @@ ul li a {
     justify-content: center;
     flex-direction: column;
   }
-  /* .row4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  } */
   .row6 {
     display: flex;
     justify-content: center;
