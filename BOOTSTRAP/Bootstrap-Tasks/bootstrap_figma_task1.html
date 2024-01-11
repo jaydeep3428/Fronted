@@ -94,7 +94,6 @@
         </div>
       </div>
 
-
       <div class="review container p-0">
         <div class="row1 d-flex justify-content-between">
           <div class="col1">
@@ -191,7 +190,7 @@
             </span>
           </div>
           <div class="main mt-5">
-            <div class="fourth_page img d-flex">
+            <div class="fourth_page img d-flex gap-3">
               <div class="img1">
                 <img
                   src="../img/App Landing Page 3.png"
@@ -238,7 +237,7 @@
         <div class="row">
           <div class="col">
             <div class="fourth-video">
-              <div id="paginated_gallery" class="gallery ">
+              <div id="paginated_gallery" class="gallery">
                 <div class="container">
                   <div class="d-flex justify-content-between">
                     <div
@@ -273,10 +272,10 @@
                   </div>
                 </div>
                 <div class="gallery_scroller mt-3 mt-md-0">
-                  <div class="colored_card ">
+                  <div class="colored_card">
                     <div class="card p-md-3 border-0 shadow rounded-2">
                       <div>
-                        <img src="../img/Shape.svg" alt="">
+                        <img src="../img/Shape.svg" alt="" />
                       </div>
                       <p class="card-text p-md-0 pb-3">
                         We will also facilitate the business marketing of these
@@ -307,10 +306,10 @@
                     </div>
                   </div>
 
-                  <div class="colored_card ">
+                  <div class="colored_card">
                     <div class="card p-md-3 border-0 shadow rounded-2">
                       <div>
-                        <img src="../img/Shape.svg" alt="">
+                        <img src="../img/Shape.svg" alt="" />
                       </div>
                       <p class="card-text p-md-0 pb-3">
                         We will also facilitate the business marketing of these
@@ -341,10 +340,10 @@
                     </div>
                   </div>
 
-                  <div class="colored_card ">
+                  <div class="colored_card">
                     <div class="card p-md-3 border-0 shadow rounded-2">
                       <div>
-                        <img src="../img/Shape.svg" alt="">
+                        <img src="../img/Shape.svg" alt="" />
                       </div>
                       <p class="card-text p-md-0 pb-3">
                         We will also facilitate the business marketing of these
@@ -373,58 +372,59 @@
                         </div>
                       </div>
                     </div>
+                  </div>
                 </div>
-              </div>
-              <script>
-                const gallery = document.querySelector("#paginated_gallery");
-                const gallery_scroller =
-                  gallery.querySelector(".gallery_scroller");
-                const gallery_item_size =
-                  gallery_scroller.querySelector("div").clientWidth;
+                <script>
+                  const gallery = document.querySelector("#paginated_gallery");
+                  const gallery_scroller =
+                    gallery.querySelector(".gallery_scroller");
+                  const gallery_item_size =
+                    gallery_scroller.querySelector("div").clientWidth;
 
-                gallery
-                  .querySelector(".btn.next")
-                  .addEventListener("click", scrollToNextPage);
-                gallery
-                  .querySelector(".btn.prev")
-                  .addEventListener("click", scrollToPrevPage);
+                  gallery
+                    .querySelector(".btn.next")
+                    .addEventListener("click", scrollToNextPage);
+                  gallery
+                    .querySelector(".btn.prev")
+                    .addEventListener("click", scrollToPrevPage);
 
-                document
-                  .querySelector("#alignment_option")
-                  .addEventListener("change", updateAlignmentOrStop);
-                document
-                  .querySelector("#stop_option")
-                  .addEventListener("change", updateAlignmentOrStop);
-                updateAlignmentOrStop();
+                  document
+                    .querySelector("#alignment_option")
+                    .addEventListener("change", updateAlignmentOrStop);
+                  document
+                    .querySelector("#stop_option")
+                    .addEventListener("change", updateAlignmentOrStop);
+                  updateAlignmentOrStop();
 
-                // For paginated scrolling, simply scroll the gallery one item in the given
-                // direction and let css scroll snaping handle the specific alignment.
-                function scrollToNextPage() {
-                  gallery_scroller.scrollTo(
-                    gallery_scroller.scrollLeft + gallery_item_size,
-                    0
-                  );
-                }
-                function scrollToPrevPage() {
-                  gallery_scroller.scrollTo(
-                    gallery_scroller.scrollLeft - gallery_item_size,
-                    0
-                  );
-                }
-
-                function updateAlignmentOrStop() {
-                  const alignment =
-                    document.querySelector("#alignment_option").value;
-                  const stop = document.querySelector("#stop_option").value;
-
-                  for (item of gallery.querySelectorAll(
-                    ".gallery_scroller > div"
-                  )) {
-                    item.style.scrollSnapAlign = alignment;
-                    item.style.scrollSnapStop = stop;
+                  // For paginated scrolling, simply scroll the gallery one item in the given
+                  // direction and let css scroll snaping handle the specific alignment.
+                  function scrollToNextPage() {
+                    gallery_scroller.scrollTo(
+                      gallery_scroller.scrollLeft + gallery_item_size,
+                      0
+                    );
                   }
-                }
-              </script>
+                  function scrollToPrevPage() {
+                    gallery_scroller.scrollTo(
+                      gallery_scroller.scrollLeft - gallery_item_size,
+                      0
+                    );
+                  }
+
+                  function updateAlignmentOrStop() {
+                    const alignment =
+                      document.querySelector("#alignment_option").value;
+                    const stop = document.querySelector("#stop_option").value;
+
+                    for (item of gallery.querySelectorAll(
+                      ".gallery_scroller > div"
+                    )) {
+                      item.style.scrollSnapAlign = alignment;
+                      item.style.scrollSnapStop = stop;
+                    }
+                  }
+                </script>
+              </div>
             </div>
           </div>
         </div>
@@ -461,7 +461,9 @@
               <div class="ms-3">
                 <span style="color: #92929d">Email me</span>
                 <br />
-                <span>ahmedtanvir8687@gmail.com</span>
+                <span style="word-break: break-all"
+                  >ahmedtanvir8687@gmail.com</span
+                >
               </div>
             </div>
             <div class="col5 d-flex shadow rounded-3 p-4">
@@ -493,7 +495,11 @@
                   placeholder="Phone number"
                   class="form-control form-control-lg"
                 />
-                <input type="email" class="form-control form-control-lg" placeholder="Budget" />
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="Budget"
+                />
               </div>
               <div class="mb-4">
                 <textarea
@@ -515,7 +521,7 @@
         <hr />
       </div>
 
-      <div class="footer1 container mt-5">
+      <div class="footer1 container mt-5 p-3">
         <div class="footer2 d-flex justify-content-between">
           <div>
             <span>@ 2022. All Rights Reserved</span>

@@ -254,7 +254,6 @@
   align-items: center;
 }
 .gallery .btn {
-
   border-radius: 50%;
   padding: 1rem;
 }
@@ -278,7 +277,6 @@
   -webkit-overflow-scrolling: touch;
 }
 
-
 .gallery_scroller div {
   /* snap align center  */
   scroll-snap-align: center;
@@ -291,14 +289,11 @@
   border-radius: 10px;
 }
 
-
-
-.gallery_scroller div.colored_card>p {
+.gallery_scroller div.colored_card > p {
   font-size: 10em;
   margin: 0;
   padding: 0;
 }
-
 
 .gallery div.note {
   position: absolute;
@@ -317,34 +312,38 @@
   color: white;
 }
 
-@media screen and (max-width:1024px) and (min-width:768px) {
-    
-    .fa-xl
-    {
-        font-size: 2rem !important;
-    }
-    .gallery_scroller div.colored_card {
-        min-width: 80%;
-        min-height: 95%;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .fa-xl {
+    font-size: 2rem !important;
+  }
+  .gallery_scroller div.colored_card {
+    min-width: 80%;
+    min-height: 95%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
-@media screen and  (min-width:1025px) {
-    
-    .fa-xl
-    {
-        font-size: 2rem !important;
-    }
-    .gallery_scroller div.colored_card {
-        min-width: 39%;
-        min-height: 95%;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width:1024px) {
+  .gallery .btn {
+    padding: 5px;
+  }
+  
+}
+@media screen and (min-width: 1025px) {
+  .fa-xl {
+    font-size: 2rem !important;
+  }
+  .gallery_scroller div.colored_card {
+    min-width: 39%;
+    min-height: 95%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
