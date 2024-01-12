@@ -248,7 +248,7 @@
 .gallery_scroller div.colored_card {
   min-width: 100%;
   min-height: 95%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,7 +286,7 @@
 }
 
 .gallery_scroller img {
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .gallery_scroller div.colored_card > p {
@@ -319,18 +319,16 @@
   .gallery_scroller div.colored_card {
     min-width: 80%;
     min-height: 95%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .gallery .btn {
     padding: 5px;
   }
-  
 }
 @media screen and (min-width: 1025px) {
   .fa-xl {
@@ -339,11 +337,9 @@
   .gallery_scroller div.colored_card {
     min-width: 39%;
     min-height: 95%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
 }
-
