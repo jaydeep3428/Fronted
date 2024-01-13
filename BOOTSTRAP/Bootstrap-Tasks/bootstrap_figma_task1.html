@@ -193,7 +193,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="gallery_scroller mt-3 mt-md-0">
+                <div class="container gallery_scroller mt-3 mt-md-0">
                   <div class="colored_card">
                     <div class="card p-md-3 border-0">
                       <div>
@@ -253,6 +253,56 @@
                     </button>
                   </div>
                 </div>
+                <script>
+                  const gallery = document.querySelector("#paginated_gallery");
+                  const gallery_scroller =
+                    gallery.querySelector(".gallery_scroller");
+                  const gallery_item_size =
+                    gallery_scroller.querySelector("div").clientWidth;
+
+                  gallery
+                    .querySelector(".btn.next")
+                    .addEventListener("click", scrollToNextPage);
+                  gallery
+                    .querySelector(".btn.prev")
+                    .addEventListener("click", scrollToPrevPage);
+
+                  document
+                    .querySelector("#alignment_option")
+                    .addEventListener("change", updateAlignmentOrStop);
+                  document
+                    .querySelector("#stop_option")
+                    .addEventListener("change", updateAlignmentOrStop);
+                  updateAlignmentOrStop();
+
+                  // For paginated scrolling, simply scroll the gallery one item in the given
+                  // direction and let css scroll snaping handle the specific alignment.
+                  function scrollToNextPage() {
+                    gallery_scroller.scrollTo(
+                      gallery_scroller.scrollLeft + gallery_item_size,
+                      0
+                    );
+                  }
+                  function scrollToPrevPage() {
+                    gallery_scroller.scrollTo(
+                      gallery_scroller.scrollLeft - gallery_item_size,
+                      0
+                    );
+                  }
+
+                  function updateAlignmentOrStop() {
+                    const alignment =
+                      document.querySelector("#alignment_option").value;
+                    const stop = document.querySelector("#stop_option").value;
+
+                    for (item of gallery.querySelectorAll(
+                      ".gallery_scroller > div"
+                    )) {
+                      item.style.scrollSnapAlign = alignment;
+                      item.style.scrollSnapStop = stop;
+                    }
+                  }
+                </script>
               </div>
             </div>
           </div>
@@ -263,7 +313,7 @@
         <div class="row">
           <div class="col">
             <div class="fourth-video">
-              <div id="paginated_gallery" class="gallery">
+              <div id="paginated_gallery1" class="gallery1">
                 <div class="container">
                   <div class="d-flex justify-content-between">
                     <div
@@ -297,7 +347,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="gallery_scroller mt-3 mt-md-0">
+                <div class="gallery_scroller1 mt-3 mt-md-0">
                   <div class="colored_card">
                     <div class="card p-md-3 border-0 shadow rounded-2">
                       <div>
@@ -401,16 +451,18 @@
                   </div>
                 </div>
                 <script>
-                  const gallery = document.querySelector("#paginated_gallery");
-                  const gallery_scroller =
-                    gallery.querySelector(".gallery_scroller");
-                  const gallery_item_size =
-                    gallery_scroller.querySelector("div").clientWidth;
+                  const gallery1 = document.querySelector(
+                    "#paginated_gallery1"
+                  );
+                  const gallery_scroller1 =
+                    gallery1.querySelector(".gallery_scroller1");
+                  const gallery_item_size1 =
+                    gallery_scroller1.querySelector("div").clientWidth;
 
-                  gallery
+                  gallery1
                     .querySelector(".btn.next")
                     .addEventListener("click", scrollToNextPage);
-                  gallery
+                  gallery1
                     .querySelector(".btn.prev")
                     .addEventListener("click", scrollToPrevPage);
 
@@ -425,14 +477,14 @@
                   // For paginated scrolling, simply scroll the gallery one item in the given
                   // direction and let css scroll snaping handle the specific alignment.
                   function scrollToNextPage() {
-                    gallery_scroller.scrollTo(
-                      gallery_scroller.scrollLeft + gallery_item_size,
+                    gallery_scroller1.scrollTo(
+                      gallery_scroller1.scrollLeft + gallery_item_size,
                       0
                     );
                   }
                   function scrollToPrevPage() {
-                    gallery_scroller.scrollTo(
-                      gallery_scroller.scrollLeft - gallery_item_size,
+                    gallery_scroller1.scrollTo(
+                      gallery_scroller1.scrollLeft - gallery_item_size,
                       0
                     );
                   }
@@ -442,8 +494,8 @@
                       document.querySelector("#alignment_option").value;
                     const stop = document.querySelector("#stop_option").value;
 
-                    for (item of gallery.querySelectorAll(
-                      ".gallery_scroller > div"
+                    for (item of gallery1.querySelectorAll(
+                      ".gallery_scroller1 > div"
                     )) {
                       item.style.scrollSnapAlign = alignment;
                       item.style.scrollSnapStop = stop;
