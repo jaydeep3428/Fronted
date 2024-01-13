@@ -248,7 +248,6 @@
 .gallery_scroller div.colored_card {
   min-width: 100%;
   min-height: 95%;
-  /* border-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,10 +284,6 @@
   position: relative;
 }
 
-.gallery_scroller img {
-  /* border-radius: 10px; */
-}
-
 .gallery_scroller div.colored_card > p {
   font-size: 10em;
   margin: 0;
@@ -319,7 +314,6 @@
   .gallery_scroller div.colored_card {
     min-width: 80%;
     min-height: 95%;
-    /* border-radius: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,7 +331,108 @@
   .gallery_scroller div.colored_card {
     min-width: 39%;
     min-height: 95%;
-    /* border-radius: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.gallery_scroller1 div.colored_card {
+  min-width: 100%;
+  min-height: 95%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery1 .btn {
+  border-radius: 50%;
+  padding: 1rem;
+}
+.gallery1 {
+  position: relative;
+  padding: 0 10;
+}
+
+.gallery_scroller1 {
+  /* snap mandatory on horizontal axis  */
+  scroll-snap-type: x mandatory;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  /* Enable Safari touch scrolling physics */
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery_scroller1 div {
+  /* snap align center  */
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  padding: 10px;
+  position: relative;
+}
+
+.gallery_scroller1 img {
+  border-radius: 10px;
+}
+
+.gallery_scroller1 div.colored_card > p {
+  font-size: 10em;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery1 div.note {
+  position: absolute;
+
+  /* vertically align center */
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  position: absolute;
+
+  font-size: 4em;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .fa-xl {
+    font-size: 2rem !important;
+  }
+  .gallery_scroller1 div.colored_card {
+    min-width: 80%;
+    min-height: 95%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .gallery1 .btn {
+    padding: 5px;
+  }
+  .gallery {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .fa-xl {
+    font-size: 2rem !important;
+  }
+  .gallery_scroller1 div.colored_card {
+    min-width: 39%;
+    min-height: 95%;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
