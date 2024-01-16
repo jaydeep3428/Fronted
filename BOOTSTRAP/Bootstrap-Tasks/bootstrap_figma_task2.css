@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  opacity: 0.05;
+  background: linear-gradient(
+    169deg,
+    #60269e -6.01%,
+    #03cffc 36.87%,
+    #b977ff 78.04%,
+    #6508c9 103.77%
+  );
+}
+.page1 {
+  height: auto;
+}
+.btn1 {
+  color: #60269e;
+}
+.btn2 {
+  background-color: #60269e;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.link1 {
+  color: #60269e;
+  font-size: 24px;
+  font-weight: 700;
+}
+.link2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.p1 {
+  font-size: 68px;
+  font-weight: 900;
+  color: #222;
+}
+.p2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+}
+.btn3 {
+  padding: 15px 50px;
+  background-color: #60269e;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.btn4 {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  background: linear-gradient(92deg, #b977ff -12.25%, #60269e 111.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 50px;
+  border: 2px solid #60269e;
+}
+.cont1 {
+  margin-top: 175px;
+  margin-bottom: 200px;
+  gap: 95px;
+}
+.second_page {
+  height: auto;
+  background: #f6eeff;
+}
+.container1 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.card1 {
+  background-color: #fff;
+  padding: 50px 86px;
+}
+.p3 {
+  color: #60269e;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.p4 {
+  border: 1px solid #60269e;
+  box-shadow: 2px 11px 15px 0px rgba(51, 51, 51, 0.15),
+    -2px -11px 15px 0px rgba(96, 38, 158, 0.15);
+}
+.second_page_1 {
+  padding-bottom: 150px;
+}
+.image-container {
+  position: relative;
+}
+.img2 {
+  position: absolute;
+  top: 15px;
+  left: 23px;
+}
+.img3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.p5 {
+  color: #000;
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.p6 {
+  color: #676767;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.btn5 {
+  padding: 15px 30px;
+  border-radius: 50px;
+  background: linear-gradient(95deg, #b977ff -11.97%, #60269e 105%);
+  color: #fff;
+}
+.img4 {
+    padding-top: 100px;
+  background-image: url(../img/Frame_62.png);
+}
+.p7 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 900;
+}
+.p8 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
