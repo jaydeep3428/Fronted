@@ -311,6 +311,58 @@ h2 {
   box-shadow: 0px 0px 5px 0px rgba(170, 170, 170, 0.15);
   padding: 12px 30px;
 }
+.input1 {
+  width: 732px;
+  height: 58px;
+  padding: 19px 12px;
+  border-radius: 50px;
+  border: 2px solid #eee;
+  text-align: center;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.eleventh_page_1 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.p18 {
+  color: #444;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+.p19 {
+  color: #777;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.twelth_page_1 {
+  background: linear-gradient(0deg, #19d0de 0%, #18e7d3 100%);
+}
+.p20 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+.gp div{
+  padding: 15px;
+}
+.footer {
+  text-align: center;
+  color: #777777;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 @media screen and (max-width: 768px) {
   .second_page {
@@ -376,10 +428,28 @@ h2 {
     flex-direction: column;
     padding-bottom: 30px;
   }
+  .eleventh_page_1 {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .twelth_page_2 {
+    flex-direction: column;
+  }
+  .twelth_page_1 {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .navigation {
     gap: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .input1 {
+    width: auto;
+    height: auto;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
