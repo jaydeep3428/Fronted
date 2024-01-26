@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+}
+.navbar {
+  background-color: #101010;
+  height: 100vh;
+}
+.container-fluid,
+.navbar-brand,
+.navbar-brand img,
+.collapse,
+ul li {
+  background-color: #101010;
+}
+.menus li a {
+  margin: 0 15px;
+}
+.navbar2 {
+    background-color: #101010;
+    height: auto;
+}
