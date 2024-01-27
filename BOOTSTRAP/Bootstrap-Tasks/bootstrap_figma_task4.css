@@ -2,23 +2,114 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #000;
 }
-.navbar {
-  background-color: #101010;
+.main_page {
+  background-color: #000;
   height: 100vh;
 }
-.container-fluid,
-.navbar-brand,
-.navbar-brand img,
-.collapse,
-ul li {
+.menus {
+  width: 90px;
+  padding: 32px 16px 16px 16px;
   background-color: #101010;
 }
-.menus li a {
-  margin: 0 15px;
+.menus_2 {
+  background-color: #101010;
+  padding: 16px 32px;
 }
-.navbar2 {
-    background-color: #101010;
-    height: auto;
+form {
+  background-color: #202020;
+  border-radius: 10px;
+  padding: 0.2rem 1rem;
+}
+.form-control {
+  padding: 0.375rem 0.75rem;
+}
+.nav {
+  margin-top: 72px;
+}
+ul li a {
+  margin-bottom: 10px;
+}
+ul li {
+  padding: 8px;
+}
+.nm {
+  color: #eee;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+}
+.ds {
+  color: #eee;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 130%;
+}
+.form-control::placeholder {
+  color: #adadad;
+}
+.txt_msg1 {
+  color: #fe1f27;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin-bottom: 16px;
+}
+.txt_msg2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+.btn1 {
+  padding: 8px 24px;
+  background-color: #750b0a;
+  color: #eee;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.compo_1 {
+  border-radius: 24px;
+  background-color: #101010;
+  height: 50vh;
+  background-image: url(../img/nairobi.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.txt_msg3 {
+  color: #fbfbfb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+.txt_msg4 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.btn2 {
+  border-radius: 4px;
+  padding: 16px 32px;
+  background-color: #e00109;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.btn3 {
+  border-radius: 4px;
+  padding: 16px 32px;
+  background-color: #fff;
+  color: #e00109;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 120%;
 }
