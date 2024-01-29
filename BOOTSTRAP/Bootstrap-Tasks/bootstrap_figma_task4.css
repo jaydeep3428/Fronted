@@ -5,7 +5,7 @@
 }
 .main_page {
   background-color: #000;
-  height: 100vh;
+  height: auto;
 }
 .menus {
   width: 90px;
@@ -74,7 +74,7 @@ ul li {
 .compo_1 {
   border-radius: 24px;
   background-color: #101010;
-  height: 50vh;
+  height: auto;
   background-image: url(../img/nairobi.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -95,6 +95,29 @@ ul li {
   letter-spacing: 1px;
   margin-bottom: 1rem;
 }
+.txt_msg5 {
+  color: #fbfbfb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.txt_msg6 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+.txt_msg7 {
+  color: #fe1f27;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+.compo_2_1 {
+  padding: 24px 0;
+}
 .btn2 {
   border-radius: 4px;
   padding: 16px 32px;
@@ -112,4 +135,40 @@ ul li {
   font-size: 19px;
   font-weight: 700;
   line-height: 120%;
+}
+.compo_2_2 {
+  gap: 20px;
+}
+.card-text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.card-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.card {
+  background-color: #202020;
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+.txt_msg8 {
+  color: #fe1f27;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.53px;
+  margin: 0.5rem;
+}
+.txt_msg9 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.26px;
 }
