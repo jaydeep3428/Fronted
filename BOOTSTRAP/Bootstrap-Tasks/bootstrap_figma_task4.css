@@ -136,8 +136,9 @@ ul li {
   font-weight: 700;
   line-height: 120%;
 }
-.compo_2_2 {
-  gap: 20px;
+.compo_2_2,
+.compo_3_2 {
+  gap: 30px;
 }
 .card-text {
   color: #fff;
@@ -171,4 +172,99 @@ ul li {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.26px;
+  margin-bottom: 0;
+}
+.compo_3_1 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.rounded {
+  background-color: #000000;
+}
+.txt_msg10 {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.76px;
+}
+.txt_msg11 {
+  color: #fe1f27;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.txt_msg12 {
+  color: #aba9c2;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+}
+.txt_msg13 {
+  color: #fe1f27;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+}
+.txt_msg14 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+}
+.txt_msg15 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.btn4 {
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: #fe1f27;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.btn5 {
+  padding: 8px 24px;
+  background-color: #202020;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.txt_msg16 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.txt_msg17 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 175%;
+}
+.txt_msg18 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+}
+.txt_msg19 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.btn6 {
+  border-radius: 4px;
+  background-color: #fe1f27;
+  padding: 5.5px 5px 4.5px 5px;
+  color: #fff;
 }
