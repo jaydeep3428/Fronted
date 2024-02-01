@@ -309,7 +309,42 @@ ul li:hover {
     rgba(254, 31, 39, 0) 78.98%
   );
 }
-@media screen and (max-width:768px) {
-  
+@media screen and (max-width: 768px) {
+  .menus {
+    width: 100%;
+  }
+  .menus_2 {
+    display: none;
+  }
+  .col-md-9 {
+    width: 100%;
+  }
+  .compo_2 {
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+  }
+  .col-md {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .compo_2_2,
+  .compo_3_2 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  table {
+    overflow: hidden;
+  }
+  .footer,.gap-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .txt_msg23 {
+    margin-top: 15px;
+    text-align: center;
+  }
 }
-
