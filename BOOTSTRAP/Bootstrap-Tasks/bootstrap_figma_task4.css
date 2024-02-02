@@ -309,6 +309,14 @@ ul li:hover {
     rgba(254, 31, 39, 0) 78.98%
   );
 }
+table {
+  width: 100%;
+}
+.compo_1 {
+  margin: 25px;
+  padding: 25px;
+}
+
 @media screen and (max-width: 768px) {
   .menus {
     width: 100%;
@@ -329,6 +337,7 @@ ul li:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
   }
   .compo_2_2,
   .compo_3_2 {
@@ -336,15 +345,28 @@ ul li:hover {
     align-items: center;
     flex-direction: column;
   }
-  table {
-    overflow: hidden;
+  table tr{
+    display: flex;
+    flex-direction: column;
   }
-  .footer,.gap-3 {
+  .footer,
+  .gap-3 {
     flex-direction: column;
     align-items: center;
   }
   .txt_msg23 {
     margin-top: 15px;
     text-align: center;
+  }
+  .compo_1 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .w-75 {
+    display: none;
+  }
+  .col-md-6 .ms-4 {
+    margin-left: 0;
   }
 }
