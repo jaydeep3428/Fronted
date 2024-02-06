@@ -6,6 +6,7 @@
 .main_page {
   background-color: #000;
   height: auto;
+  margin: 0;
 }
 .menus {
   width: 90px;
@@ -330,7 +331,6 @@ table {
   .compo_2 {
     padding: 0;
     margin: 0;
-    margin-left: 5px;
   }
   .col-md {
     width: 100%;
@@ -345,7 +345,7 @@ table {
     align-items: center;
     flex-direction: column;
   }
-  table tr{
+  table tr {
     display: flex;
     flex-direction: column;
   }
@@ -368,5 +368,29 @@ table {
   }
   .col-md-6 .ms-4 {
     margin-left: 0;
+  }
+  .nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .ms-5 {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menus {
+    width: 100%;
+    border: none;
+  }
+  .nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .compo_1 {
+    margin-left: 4px;
   }
 }
