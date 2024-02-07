@@ -83,6 +83,9 @@ ul li {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.compo_2 {
+  margin-top: 70px;
+}
 .txt_msg3 {
   color: #fbfbfb;
   font-size: 16px;
@@ -317,6 +320,16 @@ table {
   margin: 25px;
   padding: 25px;
 }
+.nav1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.compo_1_1{
+  display: flex;
+  justify-content: end;
+}
 
 @media screen and (max-width: 768px) {
   .menus {
@@ -331,6 +344,7 @@ table {
   .compo_2 {
     padding: 0;
     margin: 0;
+    margin-top: 70px;
   }
   .col-md {
     width: 100%;
@@ -339,15 +353,8 @@ table {
     flex-direction: column;
     text-align: center;
   }
-  .compo_2_2,
-  .compo_3_2 {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  table tr {
-    display: flex;
-    flex-direction: column;
+  table {
+    width: 100%;
   }
   .footer,
   .gap-3 {
@@ -377,20 +384,35 @@ table {
   .ms-5 {
     text-align: left;
   }
+  .compo_1_1 {
+    justify-content: center;
+  }
+  .compo_3_1 {
+    margin-top: 80px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .menus {
     width: 100%;
     border: none;
   }
-  .nav {
-    margin-top: 20px;
+  .nav1 {
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .compo_1 {
     margin-left: 4px;
   }
+  .compo_2_2,
+  .compo_3_2 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
+
