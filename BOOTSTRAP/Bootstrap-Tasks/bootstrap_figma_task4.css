@@ -299,13 +299,6 @@ ul li {
   font-weight: 400;
   line-height: normal;
 }
-ul li:hover {
-  background: linear-gradient(
-    90deg,
-    #fe1f27 -18.4%,
-    rgba(254, 31, 39, 0) 78.98%
-  );
-}
 .team-chat:hover {
   background: linear-gradient(
     90deg,
@@ -326,9 +319,12 @@ table {
   justify-content: center;
   align-items: center;
 }
-.compo_1_1{
+.compo_1_1 {
   display: flex;
   justify-content: end;
+}
+.btn3 {
+  margin-left: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -390,8 +386,35 @@ table {
   .compo_3_1 {
     margin-top: 80px;
   }
+  .txt_msg2 {
+    margin-bottom: 30px;
+  }
+  .compo_1 {
+    margin-top: 100px;
+    margin-bottom: 130px;
+  }
+  .compo_2_2,
+  .compo_3_2 {
+    margin-bottom: 200px;
+  }
+  .challenges {
+    margin-bottom: 150px;
+  }
+  .team {
+    margin-top: 90px;
+    margin-bottom: 100px;
+  }
+  .video {
+    margin-top: 100px;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 320px) {
+  .btn3 {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1025px) {
   .menus {
     width: 100%;
     border: none;
@@ -414,5 +437,16 @@ table {
     align-items: center;
     flex-direction: column;
   }
+  .challenge {
+    flex-direction: column;
+    gap: 30px;
+  }
+  table {
+    width: 200%;
+  }
 }
-
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .video .frame {
+    margin-left: 80px;
+  }
+}

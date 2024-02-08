@@ -20,6 +20,24 @@
       src="https://kit.fontawesome.com/daf813653a.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      @media screen and (max-width: 768px) {
+        .mt-3 {
+          flex-direction: column;
+        }
+        .btn {
+          margin-top: 20px;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .mt-3 {
+          flex-direction: row;
+        }
+        input[type="email"] {
+          width: 50%;
+        }
+      }
+    </style>
   </head>
   <body style="background-color: #000000; color: white">
     <div class="container-fluid p-0 text-center main">
@@ -47,7 +65,7 @@
                 <input
                   type="email"
                   placeholder="Enter Your Mail"
-                  class="border-1 border-white bg-transparent w-50 me-2 text-white fs-6"
+                  class="border-1 border-white bg-transparent me-2 text-white fs-6"
                   style="border-radius: 5px; height: 2.5rem"
                 />
                 <button class="btn btn-light text-danger">Notify Me</button>
