@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : BOOTSTRAP TASK
+Task : JavaScript 
 
-Topic : Some Chenges in Bootstrap Figma Task-05.
+Topic : Js intro,Js Basic Concept,Js Where to use js,Js output and performs it's practicle.
