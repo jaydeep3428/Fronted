@@ -17,7 +17,7 @@
     ></script>
     <script>
       function myfunction1() {
-        let x, y, z;
+        var x, y, z;
         x = 22;
         y = 7;
         z = x + y;
@@ -31,6 +31,10 @@
         let fullname = firstname + " " + lastname;
         var nm = "hello " + fullname + ",<br>how can i help you!";
         document.getElementById("demo2").innerHTML = nm;
+      }
+      function repeat() {
+        const element = document.getElementById("demo3");
+        element.innerHTML += element.innerHTML;
       }
     </script>
   </head>
@@ -51,15 +55,18 @@
       <div class="bg-dark-subtle rounded-4 p-3">
         <p class="fw-bolder">Note:</p>
         <p>
-          Variables defined with <span style="color: red">let</span> cannot be
+          Variables defined with
+          <span style="color: red; font-weight: bold">let</span> cannot be
           <span style="font-weight: bold">Redeclared.</span>
         </p>
         <p>
-          Variables defined with <span style="color: red">let</span> must be
+          Variables defined with
+          <span style="color: red; font-weight: bold">let</span> must be
           <span style="font-weight: bold">Declared before use.</span>
         </p>
         <p>
-          Variables defined with <span style="color: red">let</span> have
+          Variables defined with
+          <span style="color: red; font-weight: bold">let</span> have
           <span style="font-weight: bold">Block Scope.</span>
         </p>
       </div>
@@ -84,6 +91,32 @@
       <button class="btn btn-outline-primary mt-3" onclick="fun1()">
         Click!
       </button>
+    </div>
+
+    <div class="container bg-info-subtle my-3 p-3">
+      <h2 class="bg-danger text-center text-warning">const</h2>
+      <div class="bg-dark-subtle rounded-4 p-3">
+        <p class="fw-bolder">Note:</p>
+        <p>
+          Variables defined with
+          <span style="color: red; font-weight: bold">const</span> cannot be
+          <span style="font-weight: bold">Redeclared.</span>
+        </p>
+        <p>
+          Variables defined with
+          <span style="color: red; font-weight: bold">const</span> must be
+          <span style="font-weight: bold">Reassigned.</span>
+        </p>
+        <p>
+          Variables defined with
+          <span style="color: red; font-weight: bold">const</span> have
+          <span style="font-weight: bold">Block Scope.</span>
+        </p>
+      </div>
+      <p class="text-danger fw-bold" id="demo3">
+        If you print this value again and again click below button
+      </p>
+      <button class="btn btn-outline-primary" onclick="repeat()">Click!</button>
     </div>
   </body>
 </html>
