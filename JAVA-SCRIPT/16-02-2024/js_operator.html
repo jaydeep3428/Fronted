@@ -66,6 +66,30 @@
           window.alert(No4 + " Is Bigger Than " + No3);
         }
       }
+
+      function compo1() {
+        no5 = document.getElementById("no5").value;
+        if (no5 >= 18) {
+          window.alert("Your Eligible For Job Vacancy.");
+        }
+        if (no5 === "") {
+          window.alert("Please Enter Your Age");
+        } else {
+          window.alert("Sorry, Your Not Eligible For Job Vacancy.");
+        }
+      }
+
+      function compo2() {
+        no6 = document.getElementById("no6").value;
+        if (no6 === "") {
+          window.alert("Please Enter Any Number");
+        }
+        if (no6 % 2 == 0) {
+          window.alert("Number is Even");
+        } else {
+          window.alert("Number is Odd");
+        }
+      }
     </script>
   </head>
   <body>
@@ -140,6 +164,34 @@
         id="no4"
       />
       <button class="btn btn-outline-primary mt-3" onclick="compo()">
+        Done!
+      </button>
+
+      <h2 class="text-success fw-bold bg-success-subtle text-center mt-3">
+        Second Example of Check Age for Job
+      </h2>
+      <p class="text-danger fw-bold" id="">Enter Your Age:</p>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Enter Your Age"
+        id="no5"
+      />
+      <button class="btn btn-outline-primary mt-3" onclick="compo1()">
+        Done!
+      </button>
+
+      <h2 class="text-success fw-bold bg-success-subtle text-center mt-3">
+        Third Example of Odd & Even
+      </h2>
+      <p class="text-danger fw-bold" id="">Enter Any Number:</p>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Enter Any Number"
+        id="no6"
+      />
+      <button class="btn btn-outline-primary mt-3" onclick="compo2()">
         Done!
       </button>
     </div>
