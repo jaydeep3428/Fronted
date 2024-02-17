@@ -2,4 +2,4 @@ Live URL Link : https://jaydeep3428.github.io/Fronted/
 
 Task : JavaScript
 
-Topic : Js Variables,Js let,Js const,Js Operators,Js Arithmetic operator,Js Assignment operator and performs it's practicle.
+Topic : Js Data Types,Js Function,Js Object,Js Events,Js Strings,Js Strings Methods and performs it's practicle And Tasks.
