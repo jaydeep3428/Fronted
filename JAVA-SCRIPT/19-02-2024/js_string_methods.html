@@ -110,5 +110,43 @@
       </button>
       <p id="ot2" class="text-danger fw-bold"></p>
     </div>
+
+    <div class="container bg-info-subtle my-3 p-3">
+      <h2 class="text-center text-danger bg-danger-subtle">
+        String Replace() Method
+      </h2>
+      <p id="demo4" class="text-danger fw-bold">Please visit This!</p>
+
+      <button class="btn btn-outline-primary fw-bold" onclick="myFunction1()">
+        Done!
+      </button>
+
+      <script>
+        function myFunction1() {
+          let text = document.getElementById("demo4").innerHTML;
+          document.getElementById("demo4").innerHTML = text.replace(
+            "This!",
+            "Microsoft!"
+          );
+        }
+      </script>
+    </div>
+
+    <div class="container bg-info-subtle my-3 p-3">
+      <h2 class="text-center text-danger bg-danger-subtle">
+        String Trim() Method
+      </h2>
+      <h3 class="text-success fw-bold">
+        Trim() Method is used to remove the white spaces from both left and
+        right side .
+      </h3>
+      <p id="demo5" class="text-danger fw-bold"></p>
+      <script>
+        let text1 = "     Hello World!     ";
+        let text2 = text1.trim();
+
+        document.getElementById("demo5").innerHTML = text1 + "<br>" + text2;
+      </script>
+    </div>
   </body>
 </html>

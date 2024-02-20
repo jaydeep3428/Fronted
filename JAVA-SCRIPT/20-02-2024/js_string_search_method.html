@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="text-danger text-center bg-success-subtle p-2 pt-0">
+      String Search Methods
+    </h1>
+    <div class="container bg-success-subtle my-3 p-3">
+      <h2 class="text-center bg-danger-subtle text-primary">
+        The indexOf() Method
+      </h2>
+      <p class="text-danger fw-bold">
+        The position of the first occurrence of "locate" is:
+      </p>
+      <p class="text-danger fw-bold" id="demo"></p>
+      <script>
+        let text = "Please locate where 'locate' occurs!";
+        let index = text.indexOf("locate");
+        document.getElementById("demo").innerHTML = index;
+      </script>
+    </div>
+  </body>
+</html>
