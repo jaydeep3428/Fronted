@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : JavaScript
+Task : JavaScript Learning.
 
-Topic : Js number,Js BigInt,Js Array,Js Array Methods:-push(),join(),pop(),shift(),concat() .
+Topic : Js array methods,Js array search methods,Js array sort,Js array const,Js date.
