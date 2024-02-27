@@ -2,4 +2,4 @@ Live URL Link : https://jaydeep3428.github.io/Fronted/
 
 Task : JavaScript Learning.
 
-Topic : js date,js date format,js date get methods,js date set methods,js math,js random,js boolean,js comparison.
+Topic : js if else,js switch,js for loop,js loop for in,js loop for of,js while loop,js break.
