@@ -2,4 +2,4 @@ Live URL Link : https://jaydeep3428.github.io/Fronted/
 
 Task : JavaScript Learning.
 
-Topic : js arrow function,js class,js modules,js json,js js object.
+Topic : Some changes in bootstrap figma task-4 and js object,js object in array,js object of object,js object in function.
