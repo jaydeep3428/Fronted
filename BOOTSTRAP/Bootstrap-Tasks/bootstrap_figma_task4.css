@@ -326,6 +326,9 @@ table {
 .btn3 {
   margin-left: 2rem;
 }
+.navbar {
+  position: fixed;
+}
 
 @media screen and (max-width: 768px) {
   .menus {
@@ -425,6 +428,20 @@ table {
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+  }
+  .col-md-9 {
+    width: 100%;
+  }
+  .navbar {
+    position: static;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .video {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
   }
 }
 @media screen and (max-width: 426px) {
