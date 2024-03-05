@@ -20,6 +20,9 @@
   background-color: #101010;
   padding: 16px 32px;
 }
+.main-img {
+  width: 85%;
+}
 form {
   background-color: #202020;
   border-radius: 10px;
@@ -74,7 +77,7 @@ ul li {
 .btn1 {
   padding: 8px 24px;
   background-color: #750b0a;
-  /* font-family: poppins; */
+  font-family: poppins;
   color: #eee;
   font-size: 16px;
   font-weight: 400;
@@ -154,9 +157,11 @@ ul li {
   font-weight: 700;
   line-height: 120%;
 }
-.compo_2_2,
-.compo_3_2 {
+.compo_2_2 {
   gap: 30px;
+}
+.compo_3_2 {
+  gap: 40px;
 }
 .card-text {
   color: #fff;
@@ -178,6 +183,9 @@ ul li {
   background-color: #202020;
   border-radius: 20px;
   padding: 1.5rem;
+}
+.cards {
+  padding: 26px;
 }
 .txt_msg8 {
   color: #fe1f27;
@@ -339,11 +347,17 @@ ul li {
     rgba(254, 31, 39, 0) 78.98%
   );
 }
+.nav1 ul li:hover {
+  background: linear-gradient(
+    90deg,
+    #fe1f27 -18.4%,
+    rgba(254, 31, 39, 0) 78.98%
+  );
+}
 table {
   width: 100%;
 }
 .compo_1 {
-  /* margin: 25px; */
   padding: 25px;
 }
 .nav1 {
@@ -368,14 +382,33 @@ table {
 }
 .card {
   border-radius: 24px;
-
-  /* Nairobi/ Widget Bg - #151515 */
   background: rgb(21, 21, 21);
+}
+.compo_3_2 {
+  display: flex;
+}
+.pos {
+  margin: 0 auto;
+  top: -80px;
+  left: 35%;
+  position: absolute;
+  top: -80px;
+  left: 35%;
 }
 
 @media screen and (max-width: 768px) {
   .menus {
     width: 100%;
+  }
+  .compo_3_2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav1 {
+    flex-direction: row;
+  }
+  .navbar {
+    position: static;
   }
   .team {
     margin-top: 100px;
@@ -471,21 +504,16 @@ table {
 }
 @media screen and (max-width: 1025px) {
   .menus {
-    width: 100%;
     border: none;
   }
   .nav1 {
     margin: 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     text-align: center;
   }
   .col-md-9 {
     width: 100%;
-  }
-  .navbar {
-    position: static;
   }
   .team {
     margin-top: 50px;
@@ -497,6 +525,12 @@ table {
     display: flex;
     justify-content: center;
     gap: 70px;
+  }
+  .pos {
+    width: 300px;
+    position: absolute;
+    top: 60px;
+    left: 40%;
   }
 }
 @media screen and (max-width: 426px) {
@@ -518,7 +552,13 @@ table {
   }
 }
 @media screen and (min-width: 426px) and (max-width: 769px) {
-  .video .frame {
-    margin-left: 80px;
+  .compo_2_2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .compo_3_2 {
+    flex-wrap: wrap;
   }
 }
