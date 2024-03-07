@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : Bootstrap Figma Task.
+Task : Java-Script Learning.
 
-Topic : Changes and modification are done in bootstrap figma task-4.
+Topic : Console.log data,Map,Foreach,Filters methods.
