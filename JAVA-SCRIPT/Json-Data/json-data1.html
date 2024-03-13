@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      console.log(numbers);
+
+      const total = numbers.reduce(function (acc, value) {
+        console.log(`acc: ${acc} and value: ${value}`);
+        return acc + value;
+      }, 0);
+
+      console.log(total);
+
+      bill = [
+        {
+          itemname: "bag",
+          prise: 1299,
+          discount: 20,
+        },
+        {
+          itemname: "laptop",
+          prise: 29999,
+          discount: 2000,
+        },
+        {
+          itemname: "keybord",
+          prise: 1799,
+          discount: 50,
+        },
+        {
+          itemname: "mouse",
+          prise: 299,
+          discount: 0,
+        },
+      ];
+
+      const a = bill.reduce((acc, value) => acc + value.prise, 0);
+      const dis = bill.reduce((c, f) => c + f.discount, 0);
+
+      console.log("bill:", a);
+      console.log("total discount:", dis);
+    </script>
+  </body>
+</html>
