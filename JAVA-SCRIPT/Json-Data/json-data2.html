@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      async function datafetch() {
+        let data = await fetch("https://fakestoreapi.com/products");
+        let finaldata = await data.json();
+        console.log(finaldata);
+        // document.write(finaldata);
+        for (var i = 0; i < finaldata.length; i++) {
+          document.write(
+            "id : " +
+              finaldata[i].id +
+              "<br>" +
+              "title : " +
+              finaldata[i].title +
+              "<br>" +
+              "price : " +
+              finaldata[i].price +
+              "<br>" +
+              "<br>"
+          );
+        }
+        const totalprice = finaldata.reduce((pr, value) => pr + value.price, 0);
+        console.log("Total Price : " + totalprice);
+        document.write("Total Price : " + totalprice);
+        document.write(
+          " <br> <br> <b>Note : </b> Also Open The Console To See The Output."
+        );
+      }
+      datafetch();
+    </script>
+  </body>
+</html>
