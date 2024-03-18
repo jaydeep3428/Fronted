@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var No1 = 0;
+      var No2 = 0;
+      function variablestore() {
+        No1 = parseInt(document.getElementById("no1").value);
+        No2 = parseInt(document.getElementById("no2").value);
+      }
+      function addition() {
+        variablestore();
+        var answer = No1 + No2;
+        document.getElementById("ans").value = answer;
+      }
+      function subtraction() {
+        variablestore();
+        var answer = No1 - No2;
+        document.getElementById("ans").value = answer;
+      }
+      function multiplication() {
+        variablestore();
+        var answer = No1 * No2;
+        document.getElementById("ans").value = answer;
+      }
+      function division() {
+        variablestore();
+        var answer = No1 / No2;
+        document.getElementById("ans").value = answer;
+      }
+      function assign() {
+        var x = 10;
+        x += 5;
+        document.getElementById("demo").innerHTML = x;
+      }
+
+      var No3 = 0;
+      var No4 = 0;
+      function variablestore1() {
+        No3 = parseInt(document.getElementById("no3").value);
+        No4 = parseInt(document.getElementById("no4").value);
+      }
+      function compo() {
+        variablestore1();
+        if (No3 == No4) {
+          window.alert(No3 + " And " + No4 + " Are Same ");
+        }
+        if (No3 > No4) {
+          window.alert(No3 + " Is Bigger Than " + No4);
+        }
+        if (No3 < No4) {
+          window.alert(No4 + " Is Bigger Than " + No3);
+        }
+      }
+
+      function compo1() {
+        no5 = document.getElementById("no5").value;
+        if (no5 >= 18) {
+          window.alert("Your Eligible For Job Vacancy.");
+        }
+        if (no5 === "") {
+          window.alert("Please Enter Your Age");
+        }
+        if (no5 < 18) {
+          window.alert("Sorry, Your Not Eligible For Job Vacancy.");
+        }
+      }
+
+      function compo2() {
+        no6 = document.getElementById("no6").value;
+        if (no6 === "") {
+          window.alert("Please Enter Any Number");
+        }
+        if (no6 % 2 == 0) {
+          window.alert("Number is Even");
+        } else {
+          window.alert("Number is Odd");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 class="text-center bg-warning text-danger">Operators</h1>
+    <div class="container bg-primary-subtle my-3 p-3">
+      <h1 class="text-danger fw-bold bg-warning-subtle text-center">
+        Arithmetic Operator
+      </h1>
+      <p class="text-danger fw-bold">Enter Value of A:</p>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Value of A"
+        id="no1"
+      />
+      <p class="text-danger fw-bold">Enter Value of B:</p>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Value of B"
+        id="no2"
+      />
+      <p class="text-danger fw-bold">ANS</p>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Your Answer"
+        id="ans"
+        readonly
+      />
+      <div class="text-center mt-3">
+        <button class="btn btn-outline-primary" onclick="addition()">
+          Addition
+        </button>
+        <button class="btn btn-outline-primary" onclick="subtraction()">
+          Subtraction
+        </button>
+        <button class="btn btn-outline-primary" onclick="multiplication()">
+          Multiplication
+        </button>
+        <button class="btn btn-outline-primary" onclick="division()">
+          Division
+        </button>
+      </div>
+    </div>
+
+    <div class="container bg-primary-subtle my-3 p-3">
+      <h1 class="text-danger fw-bold bg-warning-subtle text-center">
+        Assignment Operator
+      </h1>
+      <h2 class="text-danger fw-bold">The += Operator (Assignment Operator)</h2>
+      <p id="demo" class="text-danger fw-bold"></p>
+      <button class="btn btn-outline-primary" onclick="assign()">Click!</button>
+    </div>
+
+    <div class="container bg-primary-subtle my-3 p-3">
+      <h1 class="text-danger fw-bold bg-warning-subtle text-center">
+        Comparison Operator
+      </h1>
+      <p class="text-danger fw-bold">Enter value Of A:</p>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter value Of A"
+        id="no3"
+      />
+      <p class="text-danger fw-bold">Enter value Of B:</p>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter value Of B"
+        id="no4"
+      />
+      <button class="btn btn-outline-primary mt-3" onclick="compo()">
+        Done!
+      </button>
+
+      <h2 class="text-success fw-bold bg-success-subtle text-center mt-3">
+        Second Example of Check Age for Job
+      </h2>
+      <p class="text-danger fw-bold" id="">Enter Your Age:</p>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Enter Your Age"
+        id="no5"
+      />
+      <button class="btn btn-outline-primary mt-3" onclick="compo1()">
+        Done!
+      </button>
+
+      <h2 class="text-success fw-bold bg-success-subtle text-center mt-3">
+        Third Example of Odd & Even
+      </h2>
+      <p class="text-danger fw-bold" id="">Enter Any Number:</p>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Enter Any Number"
+        id="no6"
+      />
+      <button class="btn btn-outline-primary mt-3" onclick="compo2()">
+        Done!
+      </button>
+    </div>
+  </body>
+</html>

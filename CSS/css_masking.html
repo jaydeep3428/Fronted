@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mask1 {
+        -webkit-mask-image: url(./Image/w3_logo.png);
+        mask-image: url(./Image/w3_logo.png);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+      }
+      .mask2 {
+        -webkit-mask-image: url(./Image/w3_logo.png);
+        mask-image: url(./Image/w3_logo.png);
+      }
+      .mask3 {
+        -webkit-mask-image: linear-gradient(black, transparent);
+        mask-image: linear-gradient(black, transparent);
+      }
+      .p {
+        font-size: 20px;
+        padding: 20px;
+        color: white;
+      }
+      .mask4 {
+        max-width: 600px;
+        height: 350px;
+        overflow-y: scroll;
+        background: url(./Image/img_5terre.jpg) no-repeat;
+        -webkit-mask-image: linear-gradient(black, transparent);
+        mask-image: linear-gradient (black, transparent);
+      }
+
+      .mask5 {
+        -webkit-mask-image: radial-gradient(
+          circle,
+          black 50%,
+          rgba(0, 0, 0, 0.5) 50%
+        );
+        mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">CSS Masking to image</h1>
+    <hr />
+    <p>this is original image</p>
+    <img src="./Image/2.jpg" alt="#" />
+    <hr />
+    <p>this is masked image with no-repeat</p>
+    <div class="mask1">
+      <img src="./Image/2.jpg" alt="#" width="600" height="400" />
+    </div>
+    <hr />
+    <p>this is masked image with repeat</p>
+    <div class="mask2">
+      <img src="./Image/2.jpg" alt="#" width="100%" height="600" />
+    </div>
+    <hr />
+    <p>this is linear gradient as a mask layer</p>
+    <div class="mask3">
+      <img src="./Image/2.jpg" alt="#" width="600" height="400" />
+    </div>
+    <hr />
+
+    <p>this is linear gradient as a mask layers</p>
+    <div class="mask4">
+      <p class="p">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sapiente
+        natus, necessitatibus nam error aperiam officiis, vitae doloremque
+        reprehenderit quod, tenetur assumenda qui. Corporis quas quos doloribus
+        magni minus! Vel.
+      </p>
+      <p class="p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        voluptates repellat explicabo repellendus ut doloribus veritatis facere
+        nemo, velit laudantium! Alias iure impedit expedita soluta quibusdam ab,
+        officia dolorum corrupti?
+      </p>
+      <p class="p">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+        dignissimos eos aspernatur voluptas consequatur, necessitatibus expedita
+        quibusdam veritatis nulla dolorum officia sunt? Accusamus alias
+        temporibus nemo iusto ad inventore eos!
+      </p>
+    </div>
+    <hr />
+    <p>this is radial gradient as a mask layer</p>
+    <div class="mask5">
+        <img src="./Image/img_5terre.jpg" alt="#" width="600" height="400">
+    </div>
+    <hr>
+    
+  </body>
+</html>

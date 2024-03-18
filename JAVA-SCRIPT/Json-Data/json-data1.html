@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      async function datafetch() {
+        let data = await fetch("https://fakestoreapi.com/products");
+        let finaldata = await data.json();
+        console.log(finaldata);
+
+        let maped = finaldata.map((ele, index, arr) => {
+          console.log(ele);
+          console.log(index);
+          console.log(arr);
+          return ele.price;
+        });
+
+        console.log(maped);
+      }
+      datafetch();
+    </script> -->
+
+    <script>
+      var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      console.log(numbers);
+      document.write("Array : " + numbers);
+
+      const total = numbers.reduce(function (acc, value) {
+        console.log(`acc: ${acc} and value: ${value}`);
+        return acc + value;
+      }, 0);
+
+      console.log(total);
+      document.write("<br><br> Total of 1 to 10 : " + total);
+
+      bill = [
+        {
+          itemname: "bag",
+          price: 1299,
+          discount: 20,
+        },
+        {
+          itemname: "laptop",
+          price: 29999,
+          discount: 2000,
+        },
+        {
+          itemname: "keybord",
+          price: 1799,
+          discount: 50,
+        },
+        {
+          itemname: "mouse",
+          price: 299,
+          discount: 0,
+        },
+      ];
+
+      console.log(bill);
+      var billString = JSON.stringify(bill, null, 2);
+
+      // Display the string
+      document.write("<pre>" + "Bill Array " + billString + "</pre>");
+      const a = bill.reduce((acc, value) => acc + value.price, 0);
+      const dis = bill.reduce((c, f) => c + f.discount, 0);
+
+      console.log("bill:", a);
+      console.log("total discount:", dis);
+
+      document.write("<br> Total of bill Price : " + a);
+      document.write("<br><br> Total of discount : " + dis);
+      document.write("<br><br> Open The console to see the results");
+    </script>
+  </body>
+</html>

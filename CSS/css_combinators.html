@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div p {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      p:hover {
+        color: #ff00ff;
+      }
+      div > p {
+        background-color: aqua;
+      }
+      div + p {
+        background-color: blueviolet;
+      }
+      div~p{
+        background-color: blueviolet;
+      }
+      img{
+        width: 200px;
+        height: 100;
+        opacity: 0.5;
+      }
+      img:hover{
+        opacity: 1.0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is css combinators</h1>
+    <p>1.descendant or space selector</p>
+    <div>
+      <p>this is paragraph no 1 in inside the div</p>
+      <p>this is paragraph no 2 in inside the div</p>
+    </div>
+    <p>this is paragraph no 3 is outside the div</p>
+
+    <hr />
+
+    <p>2.child selector</p>
+    <div>
+      <p>this is paragraph no 1 in inside the div</p>
+      <p>this is paragraph no 2 in inside the div</p>
+      <section>
+        <p>this is paragraph no 2 in inside the div</p>
+      </section>
+    </div>
+
+    <hr />
+
+    <p>3.adjacent selector</p>
+    <div>
+      <p>this is paragraph no 1 in inside the div</p>
+      <p>this is paragraph no 2 in inside the div</p>
+    </div>
+    <p>this is paragraph no 2 in inside the div</p>
+    <p>this is paragraph no 2 in inside the div</p>
+
+    <hr />
+    <p>4.general selector</p>
+    <p>Paragraph 3.</p>
+    <code>Some code.</code>
+    <p>Paragraph 4.</p>
+
+    <hr>
+
+    <h1>this is css opacity and hover </h1>
+
+    <img src="./Image/2.jpg" alt="not found">
+    <img src="./Image/img_5terre.jpg" alt="not found">
+    <img src="./Image/Back.jpg.jpg" alt="not found">
+
+    <hr>
+
+    
+  </body>
+</html>

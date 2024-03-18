@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        width: 300px;
+        border: 1px solid black;
+      }
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .overly {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 1s;
+        background-color: #008cba;
+      }
+      .container:hover .overly {
+        opacity: 0.8;
+      }
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .container1 {
+        position: relative;
+        width: 300px;
+        border: 1px solid black;
+      }
+      .image1 {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s ease;
+      }
+      .middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .container1:hover .image1 {
+        opacity: 0.3;
+      }
+
+      .container1:hover .middle {
+        opacity: 1;
+      }
+
+      .text1 {
+        background-color: #4caf50;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+
+      .container2 {
+        position: relative;
+        width: 300px;
+        border: 1px solid black;
+      }
+      .image2 {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .overly1 {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: .5s ease;
+        background-color: #008cba;
+      }
+      .container2:hover .overly1 {
+        bottom: 0;
+        height: 100%;
+        opacity: 0.6;
+      }
+      .text2 {
+        white-space: nowrap;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        overflow: visible;
+        transform: translate(-50%, -50%);
+      }
+
+      .image3:hover{
+        transform: scaleX(-1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">CSS Image Hover Overly</h1>
+    <hr />
+
+    <h2>Fade in text</h2>
+    <div class="container">
+      <img src="./Image/download.jpg" alt="#" class="image" />
+      <div class="overly">
+        <div class="text">Hello User!</div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>Fade in box</h2>
+    <div class="container1">
+      <img src="./Image/download.jpg" alt="#" class="image1" />
+      <div class="middle">
+        <div class="text1">Hello User!</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Slide</h2>
+    <div class="container2">
+      <img src="./Image/download.jpg" alt="#" class="image2" />
+      <div class="overly1">
+        <div class="text2">Hello User!</div>
+      </div>
+    </div>
+    <hr>
+    <p>this is CSS image flip on mouse over here</p>
+    <img src="./Image/2.jpg" alt="#" class="image3">
+  </body>
+</html>
