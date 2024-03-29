@@ -2,4 +2,4 @@ Live URL Link : https://jaydeep3428.github.io/Fronted/
 
 Task : Java-Script Learning.
 
-Topic : Json Data And Json Data Fetch.
+Topic : Practice Json Data Fetch.
