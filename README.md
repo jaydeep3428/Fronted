@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : Java-Script Learning.
+Task : Java-Script To-Do Task.
 
-Topic : Practice Json Data Fetch.
+Topic : Create The To-Do Task Design.
