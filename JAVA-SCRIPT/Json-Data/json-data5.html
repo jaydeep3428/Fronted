@@ -139,6 +139,16 @@
       });
 
       //Query5
+      result.forEach((student) => {
+        const averageScore =
+          Object.values(student.subjects).reduce((acc, curr) => acc + curr, 0) /
+          Object.keys(student.subjects).length;
+        const message =
+          averageScore < 70
+            ? "You need more effort."
+            : "Keep up the good work!";
+        console.log(`${student.firstname} ${student.lastname}: ${message}`);
+      });
     </script>
   </body>
 </html>
