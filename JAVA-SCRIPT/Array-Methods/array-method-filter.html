@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Open The console</h1>
+    <script>
+      const numbers = [1, 3, 5, 2, 4, 6, 9, 7, 8];
+
+      const isEven = function (numbers) {
+        return numbers % 2 === 0;
+      };
+
+      const evenNumbers = numbers.filter(isEven);
+
+      console.log("This is even numbers: ", evenNumbers);
+
+      //by using arrow function
+
+      const oddnumbers = numbers.filter((numbers) => {
+        return numbers % 2 !== 0;
+      });
+
+      console.log("This is odd Numbers: ", oddnumbers);
+    </script>
+  </body>
+</html>

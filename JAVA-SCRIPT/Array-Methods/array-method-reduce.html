@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Open The Console</h1>
+    <script>
+      //simple reduce
+      const numbers = [1, 5, 10, 15, 20, 25, 30];
+
+      const sum = numbers.reduce((currentvalue, nextvalue) => {
+        return currentvalue + nextvalue;
+      });
+
+      console.log("Sum Of All Numbers Inside Array: " + sum);
+
+      //real time example
+      const usercart = [
+        { productid: 1, productname: "mobile", price: 12000 },
+        { productid: 2, productname: "laptop", price: 55000 },
+        { productid: 3, productname: "tv", price: 19000 },
+      ];
+
+      const totalamount = usercart.reduce((currentprice, totalprice) => {
+        return currentprice + totalprice.price;
+      }, 0);
+      console.log("Sum Of Total Price: " + totalamount);
+    </script>
+  </body>
+</html>
