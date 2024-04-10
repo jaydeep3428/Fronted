@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : Java-Script.
+Task : Java-Script To-Do-Task.
 
-Topic : Rivision of array methods and filters() and Reduce() methods.
+Topic : Practice of Simple To-Do-Task. 
