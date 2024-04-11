@@ -22,7 +22,15 @@
         let li = document.createElement("li");
         li.textContent = name.value;
 
-        console.log(li);
+        // Create update button static
+        let updateButton = document.createElement("button");
+        updateButton.textContent = "Update";
+        li.appendChild(updateButton);
+
+        // Create delete button static
+        let deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        li.appendChild(deleteButton);
 
         ul.appendChild(li);
 
