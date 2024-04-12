@@ -4,37 +4,162 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+
+      .btn {
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .btn.update {
+        background-color: #007bff;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <h1>To Do List</h1>
-      <input type="text" id="taskInput" placeholder="Add new task" />
-      <button onclick="addTask()">Add Task</button>
-      <ul id="taskList">
-        <!-- task is added inside the ul. -->
+      <h1 style="text-align: center">To Do List</h1>
+      <form action="#">
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter Value"
+          autofocus
+          id="nm"
+        />
+        <input type="submit" />
+      </form>
+      <ul>
+        <li>hello</li>
       </ul>
     </div>
     <script>
-      function addTask() {
-        let name = document.getElementById("taskInput");
-        let ul = document.getElementById("taskList");
+      let form = document.querySelector("form");
+      let ul = document.querySelector("ul");
+      let upindex = null;
 
-        let li = document.createElement("li");
-        li.textContent = name.value;
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let nm = document.querySelector("#nm").value;
+        console.log(nm);
+        if (nm === "") {
+          alert("Please Enter Name");
+        }
 
-        // Create update button static
-        let updateButton = document.createElement("button");
-        updateButton.textContent = "Update";
-        li.appendChild(updateButton);
+        let local = JSON.parse(localStorage.getItem("Name")) || [];
+        console.log(local);
+        if (!Array.isArray(local)) {
+          local = [];
+        }
+        if (upindex !== null) {
+          local[upindex] = nm;
+        } else {
+          local.push(nm);
+        }
+        localStorage.setItem("Name", JSON.stringify(local));
+        e.target.reset();
+        finaldata();
+      });
 
-        // Create delete button static
-        let deleteButton = document.createElement("button");
-        deleteButton.textContent = "Delete";
-        li.appendChild(deleteButton);
+      function finaldata() {
+        let local = JSON.parse(localStorage.getItem("Name")) || [];
 
-        ul.appendChild(li);
+        ul.innerHTML = "";
 
-        taskInput.value = "";
+        local.forEach((element, index) => {
+          let li = document.createElement("li");
+          li.textContent = element;
+          ul.appendChild(li);
+          li.innerHTML = `
+            <span>${element}</span>
+            <button class="btn update" onclick="update(${index})">Update</button>
+            <button class="btn delete" onclick="del(${index})">Delete</button>
+          `;
+        });
+      }
+      finaldata();
+
+      function del(i) {
+        let local = JSON.parse(localStorage.getItem("Name")) || [];
+
+        local.splice(i, 1);
+
+        localStorage.setItem("Name", JSON.stringify(local));
+
+        finaldata();
+      }
+
+      function update(i) {
+        let local = JSON.parse(localStorage.getItem("Name")) || [];
+
+        let final = local[i];
+
+        form.name.value = final;
+
+        upindex = i;
+
+        localStorage.setItem("Name", JSON.stringify(local));
       }
     </script>
   </body>
