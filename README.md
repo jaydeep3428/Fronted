@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : Java-Script To-Do-Task.
+Task : Java-Script CRUD-Task.
 
-Topic : Complete the to-do task with add, update, and delete functionality.
+Topic : Create and complete the crud task with the sorting method using and display year-wise data.
