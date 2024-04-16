@@ -23,7 +23,7 @@ input[type="text"] {
   border-radius: 5px;
   font-size: 16px;
 }
-input[type="submit"] {
+button {
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -32,7 +32,7 @@ input[type="submit"] {
   font-size: 16px;
   cursor: pointer;
 }
-input[type="submit"]:hover {
+button:hover {
   background-color: #0056b3;
 }
 h1 {
