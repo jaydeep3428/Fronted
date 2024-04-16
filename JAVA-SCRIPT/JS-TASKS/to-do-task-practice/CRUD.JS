@@ -86,11 +86,11 @@ displaydata();
 function del(i) {
   let timelinedata = JSON.parse(localStorage.getItem("timelinedata")) || [];
 
-  timelinedata.splice(i, 1);
-
-  localStorage.setItem("timelinedata", JSON.stringify(timelinedata));
-
-  displaydata();
+  if (confirm("Are you sure you want to delete this item?")) {
+    timelinedata.splice(i, 1);
+    localStorage.setItem("timelinedata", JSON.stringify(timelinedata));
+    displaydata();
+  }
 }
 
 function update(i) {
@@ -104,6 +104,16 @@ function update(i) {
   form.year.value = final.year;
 
   updateindex = i;
+
+  // Change the text of the button to "UPDATE"
+  document.querySelector('button[type="submit"]').textContent = "UPDATE";
+
+  // Add an event listener to switch back to "CREATE" after the form is submitted
+  form.addEventListener("submit", function handleSubmitAfterUpdate(e) {
+    e.preventDefault();
+    document.querySelector('button[type="submit"]').textContent = "ADD+";
+    form.removeEventListener("submit", handleSubmitAfterUpdate);
+  });
 
   localStorage.setItem("timelinedata", JSON.stringify(timelinedata));
 }

@@ -34,7 +34,7 @@
         font-size: 16px;
       }
 
-      input[type="submit"] {
+      button {
         padding: 10px 20px;
         background-color: #007bff;
         color: #fff;
@@ -88,7 +88,7 @@
           autofocus
           id="nm"
         />
-        <input type="submit" />
+        <button type="submit">CREATE</button>
       </form>
       <ul>
         <li>hello</li>
@@ -143,21 +143,30 @@
       function del(i) {
         let local = JSON.parse(localStorage.getItem("Name")) || [];
 
-        local.splice(i, 1);
-
-        localStorage.setItem("Name", JSON.stringify(local));
-
-        finaldata();
+        if (confirm("Are you sure you want to delete this item?")) {
+          local.splice(i, 1);
+          localStorage.setItem("Name", JSON.stringify(local));
+          finaldata();
+        }
       }
 
       function update(i) {
         let local = JSON.parse(localStorage.getItem("Name")) || [];
-
         let final = local[i];
 
         form.name.value = final;
-
         upindex = i;
+
+        // Change the text of the button to "UPDATE"
+        let submitButton = document.querySelector('button[type="submit"]');
+        submitButton.textContent = "UPDATE";
+
+        // Add an event listener to switch back to "CREATE" after the form is submitted
+        form.addEventListener("submit", function handleSubmitAfterUpdate(e) {
+          e.preventDefault();
+          submitButton.textContent = "CREATE";
+          form.removeEventListener("submit", handleSubmitAfterUpdate);
+        });
 
         localStorage.setItem("Name", JSON.stringify(local));
       }
