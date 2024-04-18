@@ -1,5 +1,5 @@
 Live URL Link : https://jaydeep3428.github.io/Fronted/
 
-Task : Java-Script CRUD-Task.
+Task : Java-Script Weather-App Task.
 
-Topic : Crud Task With Cards.
+Topic : Weather-App Task.
