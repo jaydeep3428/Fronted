@@ -1,6 +1,5 @@
 let cityName = "junagadh";
-const url =
-  "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${cityName}";
+const url = `https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${cityName}`;
 const options = {
   method: "GET",
   headers: {
@@ -19,18 +18,18 @@ async function makeweatherapp(url, options, city) {
     console.log(result);
 
     document.querySelector(".city-name").textContent = city;
-    document.querySelector(".temp").textContent = result.temp;
+    document.querySelector(".temp").textContent = result.temp + "°C";
     document.querySelector("#location").innerHTML = city;
     document.querySelector("#humidity").innerHTML = result.humidity;
     document.querySelector("#wind").innerHTML = result.wind_speed;
-    document.querySelector(".cloud").innerHTML = result.cloud;
-    document.querySelector(".feels").innerHTML = result.feels;
-    document.querySelector(".humidity").innerHTML = result.humidity;
-    document.querySelector(".maxtemp").innerHTML = result.max_temp;
-    document.querySelector(".mintemp").innerHTML = result.min_temp;
+    document.querySelector(".cloud").innerHTML = result.cloud + "%";
+    document.querySelector(".feels").innerHTML = result.feels + "deg";
+    document.querySelector(".humidity").innerHTML = result.humidity + "%";
+    document.querySelector(".maxtemp").innerHTML = result.max_temp + "°C";
+    document.querySelector(".mintemp").innerHTML = result.min_temp + "°C";
     document.querySelector(".sunrise").innerHTML = result.sunrise;
     document.querySelector(".sunset").innerHTML = result.sunset;
-    document.querySelector(".temp2").innerHTML = result.temp2;
+    document.querySelector(".temp2").innerHTML = result.temp2 + "°C";
     document.querySelector(".winddeg").innerHTML = result.wind_degree;
     document.querySelector(".windspeed").innerHTML = result.wind_speed;
   } catch (error) {
@@ -38,4 +37,4 @@ async function makeweatherapp(url, options, city) {
     alert("Failed to fetch weather data. Please try again later.", error);
   }
 }
-// makeweatherapp(url, options, cityName);
+makeweatherapp(url, options, cityName);
