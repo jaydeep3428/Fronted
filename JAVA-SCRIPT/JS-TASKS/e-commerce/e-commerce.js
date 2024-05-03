@@ -56,3 +56,34 @@ async function init() {
 }
 init();
 
+sortby.addEventListener("change", async () => {
+  const data = await fetchData(URL);
+  let sorteddata;
+  if (sortby.value === "low-to-high") {
+    sortedList = data.sort((a, b) => a.price - b.price);
+  }
+  console.log(sortby.value);
+  if (sortby.value === "high-to-low") {
+    sortedList = data.sort((a, b) => b.price - a.price);
+  }
+  // console.log(sortedList)
+  makecard(sortedList);
+});
+
+filterby.addEventListener("change", async () => {
+  const data = await fetchData(URL);
+  const filteredList = data.filter((item) => {
+    let final = item.category === filterby.value;
+
+    for (let heading of h2) {
+      if (heading.innerText !== filterby.value) {
+        heading.style.display = "none";
+      } else {
+        heading.style.display = "inline-block";
+      }
+    }
+
+    return final;
+  });
+  makecard(filteredList);
+});
