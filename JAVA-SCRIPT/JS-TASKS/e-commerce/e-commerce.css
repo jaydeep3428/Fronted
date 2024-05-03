@@ -108,7 +108,6 @@ h2 {
   overflow: hidden;
   border-radius: 15px;
   transition: transform 0.3s ease;
-
 }
 .cards:hover {
   transform: translateY(-5px);
