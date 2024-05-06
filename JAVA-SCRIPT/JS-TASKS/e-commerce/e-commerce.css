@@ -25,7 +25,7 @@ body {
   background-color: #c0c0c0; /* Silver */
 }
 
-.container nav {
+.container-fluid nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -37,11 +37,26 @@ body {
   backdrop-filter: blur(20px);
   background-color: #fff; /* White */
 }
+@media screen and (max-width: 768px) {
+  .container-fluid nav {
+    position: static;
+  }
+}
+@media screen and (max-width: 320px) {
+  button div {
+    flex-direction: column;
+  }
+}
 
 nav ul {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 2rem;
+}
+button div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul li {
@@ -107,11 +122,11 @@ h2 {
   padding: 1rem;
   overflow: hidden;
   border-radius: 15px;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
 }
-.cards:hover {
+/* .cards:hover {
   transform: translateY(-5px);
-}
+} */
 
 .cards img {
   width: 100%;
