@@ -24,7 +24,7 @@ function makecard(finaldata) {
 
   for (const items of finaldata) {
     const makecard = `<div class="cards">
-                                <div class="card">
+                                <div class="make_card">
                                     <img src="${items.image}" alt="">
                                     <title>${items.title}</title>
                                     <div class="card-body">
