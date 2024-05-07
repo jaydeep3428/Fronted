@@ -41,6 +41,9 @@ body {
   .container-fluid nav {
     position: static;
   }
+  .div {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 320px) {
   button div {
@@ -110,7 +113,6 @@ h2 {
 .div {
   display: flex;
   align-items: center;
-  justify-content: start;
   flex-wrap: wrap;
   gap: 2rem;
 }
