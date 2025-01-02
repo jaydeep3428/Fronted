@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Protest+Riot&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  min-height: 100%;
+  background-color: #101010; /* Light gray */
+}
+
+::-webkit-scrollbar {
+  background-color: #211951; /* Dark purple */
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #c0c0c0; /* Silver */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0; /* Silver */
+}
+
+.container-fluid nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  box-shadow: 0 2px 5px #c0c0c0; /* Silver */
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(20px);
+  background-color: #fff; /* White */
+}
+@media screen and (max-width: 768px) {
+  .container-fluid nav {
+    position: static;
+  }
+  .div {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  button div {
+    flex-direction: column;
+  }
+}
+
+nav ul {
+  display: flex;
+  /* align-items: center; */
+  gap: 2rem;
+}
+button div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #211951; /* Dark purple */
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+  pointer-events: auto;
+  color: #211951; /* Dark purple */
+}
+
+nav div select {
+  border: 1px solid #808080; /* Grey */
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  background-color: #fff; /* White */
+}
+
+nav div select option {
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #808080; /* Grey */
+}
+
+.div {
+  padding: 2rem;
+}
+
+h2 {
+  margin: 0.5rem 2rem;
+  display: inline-block;
+  text-align: center;
+  background-color: #161647; /* Dark purple */
+  color: #fff; /* White */
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.div .cards {
+  max-width: 350px;
+  height: 400px;
+  background-color: #fff; /* White */
+  padding: 1rem;
+  overflow: hidden;
+  border-radius: 15px;
+  /* transition: transform 0.3s ease; */
+}
+/* .cards:hover {
+  transform: translateY(-5px);
+} */
+
+.cards img {
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  margin-top: 1.5rem;
+}
+
+.card-body p {
+  margin-block: 0.5rem;
+  font-weight: 700;
+}

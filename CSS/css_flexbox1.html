@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      .column img {
+        margin-top: 8px;
+        vertical-align: center;
+      }
+      @media (max-width: 100px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      @media (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">
+      Responsive Image Gallery Using Flex And Media-Query
+    </h1>
+    <hr />
+    <div class="row">
+      <div class="column">
+        <img src="./Image/2.jpg" alt="#" width="100%" />
+        <img src="./Image/Back.jpg.jpg" alt="#" width="100%" />
+        <img src="./Image/download (1).jpg" alt="$" width="100%" />
+        <img src="./Image/download.jpg" alt="#" width="100%" />
+        <img src="./Image/download1.jpg" alt="#" width="100%" />
+        <img
+          src="./Image/HD-wallpaper-half-moon-phone-thumbnail.jpg"
+          alt="$"
+          width="100%"
+        />
+        <img src="./Image/images (1).jpg" alt="#" width="100%" />
+        <img src="./Image/images.jpg" alt="#" width="100%" />
+        <img src="./Image/img_5terre.jpg" alt="$" width="100%" />
+      </div>
+
+      <div class="column">
+        <img src="./Image/Back.jpg.jpg" alt="#" width="100%" />
+        <img src="./Image/2.jpg" alt="#" width="100%" />
+        <img src="./Image/download.jpg" alt="#" width="100%" />
+        <img src="./Image/download1.jpg" alt="#" width="100%" />
+        <img
+          src="./Image/HD-wallpaper-half-moon-phone-thumbnail.jpg"
+          alt="$"
+          width="100%"
+        />
+        <img src="./Image/images (1).jpg" alt="#" width="100%" />
+        <img src="./Image/download (1).jpg" alt="$" width="100%" />
+        <img src="./Image/images.jpg" alt="#" width="100%" />
+        <img src="./Image/img_5terre.jpg" alt="$" width="100%" />
+      </div>
+
+      <div class="column">
+        <img src="./Image/2.jpg" alt="#" width="100%" />
+        <img src="./Image/Back.jpg.jpg" alt="#" width="100%" />
+        <img src="./Image/download (1).jpg" alt="$" width="100%" />
+        <img src="./Image/download.jpg" alt="#" width="100%" />
+        <img src="./Image/download1.jpg" alt="#" width="100%" />
+        <img
+          src="./Image/HD-wallpaper-half-moon-phone-thumbnail.jpg"
+          alt="$"
+          width="100%"
+        />
+        <img src="./Image/images (1).jpg" alt="#" width="100%" />
+        <img src="./Image/images.jpg" alt="#" width="100%" />
+        <img src="./Image/img_5terre.jpg" alt="$" width="100%" />
+      </div>
+
+      <div class="column">
+        <img src="./Image/2.jpg" alt="#" width="100%" />
+        <img src="./Image/Back.jpg.jpg" alt="#" width="100%" />
+        <img src="./Image/download (1).jpg" alt="$" width="100%" />
+        <img src="./Image/download.jpg" alt="#" width="100%" />
+        <img src="./Image/download1.jpg" alt="#" width="100%" />
+        <img src="./Image/img_5terre.jpg" alt="$" width="100%" />
+        <img src="./Image/images.jpg" alt="#" width="100%" />
+        <img
+          src="./Image/HD-wallpaper-half-moon-phone-thumbnail.jpg"
+          alt="$"
+          width="100%"
+        />
+        <img src="./Image/images (1).jpg" alt="#" width="100%" />
+      </div>
+    </div>
+  </body>
+</html>

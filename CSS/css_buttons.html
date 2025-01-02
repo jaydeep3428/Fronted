@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        background-color: #04aa6d;
+        border: none;
+        padding: 15px 32px;
+        margin: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .red {
+        background-color: red;
+      }
+      .sky {
+        background-color: skyblue;
+      }
+
+      .btn1 {
+        background-color: white;
+        border: none;
+        padding: 15px 32px;
+        margin: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        transition-duration: 0.5s;
+      }
+      .green1 {
+        border: 2px solid green;
+      }
+      .green1:hover {
+        background-color: green;
+        color: white;
+      }
+      .blue1 {
+        border: 2px solid blue;
+      }
+      .blue1:hover {
+        background-color: blue;
+        color: white;
+      }
+      .red1 {
+        border: 2px solid red;
+      }
+      .red1:hover {
+        background-color: red;
+        color: white;
+      }
+      .sky1 {
+        border: 2px solid skyblue;
+      }
+      .sky1:hover {
+        background-color: skyblue;
+        color: white;
+      }
+      .grey {
+        border: 2px solid gray;
+      }
+      .grey:hover {
+        background-color: gray;
+        color: white;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .container img {
+        width: 100%;
+        height: auto;
+      }
+      .container .btn2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 5px;
+        margin: 16px 30px;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border: none;
+        font-size: 20px;
+        transform: translate(-100%, -100%);
+      }
+      .container .btn2:hover{
+        background-color: black;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">CSS Multi Design Button</h1>
+    <hr />
+    <button>this is Simple button</button>
+    <button class="btn">Button</button>
+    <a href="#" class="btn">Link Button</a>
+    <input type="button" name="nm" id="nm" value="Input Button" class="btn" />
+    <hr />
+    <button class="btn">lightgreen</button>
+    <button class="btn green">Green</button>
+    <button class="btn blue">Blue</button>
+    <button class="btn red">Red</button>
+    <button class="btn sky">Sky-Blue</button>
+    <hr />
+    <button class="btn1 green1">Green</button>
+    <button class="btn1 blue1">Blue</button>
+    <button class="btn1 red1">Red</button>
+    <button class="btn1 sky1">Sky-Blue</button>
+    <button class="btn1 grey">Grey</button>
+    <hr />
+    <p>Button on image</p>
+    <div class="container">
+      <img src="./Image/img_5terre.jpg" alt="#" />
+      <button class="btn2">Click!</button>
+    </div>
+
+    <hr>
+
+
+  </body>
+</html>

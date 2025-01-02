@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        height: 150px;
+        width: 200px;
+        position: relative;
+        background: red;
+        animation-name: ex1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes ex1 {
+        from {
+          top: 0;
+        }
+        to {
+          top: 300px;
+          background-color: blueviolet;
+        }
+      }
+      .div2 {
+        height: 150px;
+        width: 200px;
+        position: fixed;
+        background: yellow;
+        animation-name: ex2;
+        animation-duration: 3s;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+      }
+      @keyframes ex2 {
+        from {
+          right: 0px;
+        }
+        to {
+          right: 1190px;
+          background-color: blueviolet;
+        }
+      }
+      .div2 img:hover{
+        border:3px solid black;
+        border-radius: 10px;
+      }
+      .div3 {
+        height: 150px;
+        width: 200px;
+        position: relative;
+        background: red;
+        animation-name: ex3;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+      }
+      @keyframes ex3 {
+        from {
+          top: 0;
+        }
+        to {
+          top: 300px;
+          background-color: blueviolet;
+        }
+      }
+      .div4 {
+        height: 150px;
+        width: 200px;
+        position: fixed;
+        background: skyblue;
+        animation: ex4 3s linear 2s infinite alternate-reverse; 
+      }
+      @keyframes ex4 {
+        from {
+          right: 0px;
+        }
+        to {
+          right: 1190px;
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation-fill-mode property</h1>
+    <div class="div1">CSS Animation-fill-mode: forwards prop.</div>
+    <div class="div2">
+      <img src="./Image/2.jpg" alt="no" height="100%" width="100%" />
+    </div>
+    <div class="div3">CSS Animation-fill-mode: both prop.</div>
+    <div class="div4">CSS Short hand prop..</div>
+  </body>
+</html>

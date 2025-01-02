@@ -1,0 +1,15 @@
+<svg width="106" height="30" viewBox="0 0 106 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 8935">
+<g id="Group 8934">
+<g id="Rectangle 2056">
+<mask id="path-1-inside-1_106_258" fill="white">
+<rect width="30" height="30" rx="2"/>
+</mask>
+<rect width="30" height="30" rx="2" stroke="#C4C4C4" stroke-width="6" mask="url(#path-1-inside-1_106_258)"/>
+</g>
+<rect id="Rectangle 2057" x="8" y="8" width="14" height="14" rx="2" fill="#2ABF74"/>
+</g>
+<rect id="Rectangle 2057_2" x="54" y="8" width="14" height="14" rx="2" fill="#C4C4C4"/>
+<rect id="Rectangle 2058" x="92" y="8" width="14" height="14" rx="2" fill="#C4C4C4"/>
+</g>
+</svg>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      result = [
+        {
+          Id: "62cb82b136bb23650d33c90",
+          firstname: "Reema",
+          lastname: "Maheta",
+          emailId: "reemamaheta@google.com",
+          birthdate: "29 - 02 - 2002",
+          image: "",
+          subjects: {
+            mathematics: 68,
+            science: 84,
+            gujarati: 95,
+            socialscience: 76,
+            english: 85,
+          },
+        },
+        {
+          Id: "62cb82b136bb23650d33c90",
+          firstname: "Maya",
+          lastname: "Thakur",
+          emailId: "mayathakur@google.com",
+          birthdate: "30 - 02 - 2002",
+          image: "",
+          subjects: {
+            mathematics: 62,
+            science: 84,
+            gujarati: 65,
+            socialscience: 74,
+            english: 95,
+          },
+        },
+        {
+          Id: "62cb82b136bb23650d33c90",
+          firstname: "Malhar",
+          lastname: "Vyas",
+          emailId: "malharvyas@google.com",
+          birthdate: "28 - 02 - 2002",
+          image: "",
+          subjects: {
+            mathematics: 61,
+            science: 95,
+            gujarati: 54,
+            socialscience: 55,
+            english: 84,
+          },
+        },
+      ];
+
+      document.write("Open the console");
+
+      //   console.log(result);
+
+      //   console.log(result[1]);
+
+      //Query1:
+      const seconddata = result.map((item, index) => {
+        if (index === 1) {
+          return item;
+        }
+      });
+      console.log("Display the second index of data in students:");
+      console.log(seconddata);
+
+      //Query2:
+      const firstnamesAndLastnames = result.map((student) => {
+        return {
+          firstname: student.firstname,
+          lastname: student.lastname,
+        };
+      });
+
+      console.log("Dispaly the firstname and lastname of all students:");
+      console.log(firstnamesAndLastnames);
+
+      //Query3:
+      result.forEach((student) => {
+        if (student.emailId === "malharvyas@google.com") {
+          console.log("Marks of Malhar Vyas:");
+          console.log("Mathematics:", student.subjects.mathematics);
+          console.log("Science:", student.subjects.science);
+          console.log("Gujarati:", student.subjects.gujarati);
+          console.log("Social Science:", student.subjects.socialscience);
+          console.log("English:", student.subjects.english);
+        }
+      });
+
+      //Query4:
+      // Define grade boundaries
+      const gradeBoundaries = {
+        A: 90,
+        B: 80,
+        C: 70,
+        D: 60,
+        F: 0,
+      };
+
+      // Iterate through the result array
+      result.forEach((student) => {
+        // Calculate total marks
+        const totalMarks = Object.values(student.subjects).reduce(
+          (acc, curr) => acc + curr,
+          0
+        );
+
+        // Calculate percentage
+        const percentage =
+          (totalMarks / (Object.keys(student.subjects).length * 100)) * 100;
+
+        // Determine grade
+        let grade;
+        if (percentage >= gradeBoundaries.A) {
+          grade = "A";
+        } else if (percentage >= gradeBoundaries.B) {
+          grade = "B";
+        } else if (percentage >= gradeBoundaries.C) {
+          grade = "C";
+        } else if (percentage >= gradeBoundaries.D) {
+          grade = "D";
+        } else {
+          grade = "F";
+        }
+
+        console.log("");
+        // Print the student's name, percentage, and grade
+        console.log(
+          `${student.firstname} ${
+            student.lastname
+          }: Percentage - ${percentage.toFixed(2)}%, Grade - ${grade}`
+        );
+      });
+
+      //Query5
+      result.forEach((student) => {
+        const averageScore =
+          Object.values(student.subjects).reduce((acc, curr) => acc + curr, 0) /
+          Object.keys(student.subjects).length;
+        const message =
+          averageScore < 70
+            ? "You need more effort."
+            : "Keep up the good work!";
+        console.log(`${student.firstname} ${student.lastname}: ${message}`);
+      });
+    </script>
+  </body>
+</html>
